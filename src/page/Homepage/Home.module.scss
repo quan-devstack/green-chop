@@ -1,12 +1,12 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .banner {
   position: relative;
   margin-top: 5px;
   overflow-y: hidden;
-
-  .container {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
 
   .banner__wrapper {
     display: grid;
@@ -71,4 +71,66 @@
       }
     }
   }
+}
+
+.achievement {
+  margin-top: 70px;
+}
+
+.product {
+  margin-top: 150px;
+}
+
+.news {
+  margin-top: 50px;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  &__content {
+    margin-top: 50px;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    &__desc {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  &__lists {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+  }
+}
+
+.struc {
+  position: relative;
+  margin-top: 80px;
+
+  &__background {
+    position: absolute;
+    top: 270px;
+    width: 100%;
+    height: 400px;
+    background-color: var(--orange-10);
+  }
+}
+
+.quality {
+  margin-top: 200px;
+}
+
+.support {
+  margin-top: 150px;
 }

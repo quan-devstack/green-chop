@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 100px auto 0 auto;
+  border: 1px solid var(--green-80);
+  border-radius: 7px;
+  padding: 10px;
+  width: 150px;
+  font-weight: 600;
+  background-color: var(--white-background);
+  cursor: pointer;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    color: var(--white-txt);
+    background-color: var(--green-80);
+  }
+
+  &:hover img {
+    filter: invert(1) brightness(2);
+  }
+}

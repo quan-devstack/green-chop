@@ -1,11 +1,9 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .product {
-  margin-top: 150px;
-
-  .container {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-
   &__title {
     text-align: center;
   }
@@ -85,39 +83,6 @@
           background-color: var(--orange-60);
         }
       }
-    }
-  }
-
-  &__item {
-    // .esclipe-orange {
-    //   top: -70px;
-    //   left: 50px;
-    //   background-color: var(--orange-30);
-    // }
-
-    // .esclipe-green {
-    //   top: -70px;
-    //   left: 50px;
-    //   background-color: var(--green-30);
-    // }
-
-    &__quantity {
-      display: block;
-      margin: 15px 0;
-      text-align: center;
-    }
-
-    &__price {
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-      color: var(--gray-80);
-
-      &--highlight {
-      }
-    }
-
-    &__btn {
     }
   }
 }
