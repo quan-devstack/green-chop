@@ -1,6 +1,6 @@
 import Esclipe from "../Esclipe/Esclipe";
 import style from "../Achivement/Achivement.module.scss";
-import bage_ic from "../../assets/icons/badge.png";
+import bage_ic from "/icons/badge.png";
 
 const Achivement = () => {
   return (
@@ -54,8 +54,8 @@ const Achivement = () => {
             </p>
           </div>
         </div>
-        <Esclipe position={"left"} background={"green-20"} />
-        <Esclipe position={"right"} background={"orange-20"} />
+        <Esclipe position={"left"} background={"green-20"} size={"200"} />
+        <Esclipe position={"right"} background={"orange-20"} size={"200"} />
       </div>
     </div>
   );

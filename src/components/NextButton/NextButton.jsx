@@ -1,5 +1,5 @@
 import style from "../../components/NextButton/NextButton.module.scss";
-import next_ic from "../../assets/icons/next.png";
+import next_ic from "/icons/next.png";
 
 const NextButton = () => {
   return (

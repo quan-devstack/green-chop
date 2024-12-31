@@ -1,7 +1,7 @@
 import style from "../../components/Structure/ChopStructure.module.scss";
-import compon01 from "../../assets/images/structure01.png";
-import compon02 from "../../assets/images/structure02.png";
-import compon03 from "../../assets/images/structure03.png";
+import compon01 from "/images/structure01.png";
+import compon02 from "/images/structure02.png";
+import compon03 from "/images/structure03.png";
 
 const ChopStructure = () => {
   return (

@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import Esclipe from "../Esclipe/Esclipe";
 import style from "./Product.module.scss";
 
 const ProductItem = ({
+  id,
   img,
   title_a,
   title_b,
@@ -9,11 +11,15 @@ const ProductItem = ({
   price,
   esclipe_bg,
 }) => {
+  const nav = useNavigate();
+
+  console.log("Img:", img);
+
   return (
     <div className={style.product__item}>
       <div className={style.product__item__box}>
         <img src={img} alt="product-img" />
-        <Esclipe position={"center"} background={esclipe_bg} />
+        <Esclipe position={"center"} background={esclipe_bg} size={"200"} />
       </div>
       <p className={style.product__item__title}>
         <span>{title_a}</span>
@@ -28,7 +34,12 @@ const ProductItem = ({
           vnđ
         </span>
       </div>
-      <button className={style.product__item__btn}>Thêm vào giỏ hàng</button>
+      <button
+        className={style.product__item__btn}
+        onClick={() => nav(`/product/${id}`)}
+      >
+        Thêm vào giỏ hàng
+      </button>
     </div>
   );
 };

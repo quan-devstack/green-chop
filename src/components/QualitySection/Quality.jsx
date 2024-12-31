@@ -1,11 +1,11 @@
 import QualityItem from "./QualityItem";
 import style from "../../components/QualitySection/Quality.module.scss";
-import bage_ic from "../../assets/icons/badge-orange.png";
-import shield_ic from "../../assets/icons/shield-orange.png";
-import start_ic from "../../assets/icons/start-orange.png";
-import saving_ic from "../../assets/icons/saving-orange.png";
-import unique_ic from "../../assets/icons/unique-orange.png";
-import delivery_ic from "../../assets/icons/delivery-orange.png";
+import bage_ic from "/icons/badge-orange.png";
+import shield_ic from "/icons/shield-orange.png";
+import start_ic from "/icons/start-orange.png";
+import saving_ic from "/icons/saving-orange.png";
+import unique_ic from "/icons/unique-orange.png";
+import delivery_ic from "/icons/delivery-orange.png";
 
 const Quality = () => {
   return (

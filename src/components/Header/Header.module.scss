@@ -28,6 +28,11 @@
           border-bottom: 1px solid var(--green-80);
           color: var(--green-80);
         }
+
+        &.active {
+          border-bottom: 1px solid var(--green-80);
+          color: var(--green-80);
+        }
       }
 
       &__ic {

@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import style from "./Header.module.scss";
-import logo from "../../assets/images/logo.png";
-import cart_ic from "../../assets/icons/shopping-cart.png";
-import search_ic from "../../assets/icons/search.png";
+import logo from "/images/logo.png";
+import cart_ic from "/icons/shopping-cart.png";
+import search_ic from "/icons/search.png";
 
 const Header = () => {
   return (
@@ -15,19 +15,45 @@ const Header = () => {
           <nav className={style.header__wrapper__nav}>
             <ul>
               <li className={style.header__wrapper__nav__item}>
-                <Link to={"/"}>Trang chủ</Link>
+                <NavLink
+                  to={"/"}
+                  end
+                  className={({ isActive }) => (isActive ? style.active : "")}
+                >
+                  Trang chủ
+                </NavLink>
               </li>
               <li className={style.header__wrapper__nav__item}>
-                <Link to={"/about"}>Về GreenChop</Link>
+                <NavLink
+                  to={"/about"}
+                  className={({ isActive }) => (isActive ? style.active : "")}
+                >
+                  Về GreenChop
+                </NavLink>
               </li>
               <li className={style.header__wrapper__nav__item}>
-                <Link to={"/product"}>Sản phẩm</Link>
+                <NavLink
+                  to={"/product"}
+                  className={({ isActive }) => (isActive ? style.active : "")}
+                >
+                  Sản phẩm
+                </NavLink>
               </li>
               <li className={style.header__wrapper__nav__item}>
-                <Link to={"/news"}>Tin tức</Link>
+                <NavLink
+                  to={"/news"}
+                  className={({ isActive }) => (isActive ? style.active : "")}
+                >
+                  Tin tức
+                </NavLink>
               </li>
               <li className={style.header__wrapper__nav__item}>
-                <Link to={"/contact"}>Liên hệ</Link>
+                <NavLink
+                  to={"/contact"}
+                  className={({ isActive }) => (isActive ? style.active : "")}
+                >
+                  Liên hệ
+                </NavLink>
               </li>
               <div className={style.header__wrapper__nav__ic}>
                 <img src={cart_ic} alt="cart-ic" />

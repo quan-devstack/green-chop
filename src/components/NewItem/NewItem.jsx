@@ -1,5 +1,5 @@
 import style from "./NewItem.module.scss";
-import calender_ic from "../../assets/icons/calendar.png";
+import calender_ic from "/icons/calendar.png";
 
 const NewItem = ({ img, grid_column }) => {
   return (

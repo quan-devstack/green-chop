@@ -1,5 +1,5 @@
 import style from "../../components/SupportSection/Support.module.scss";
-import cta_bg from "../../assets/images/cta-background.png";
+import cta_bg from "/images/cta-background.png";
 
 const Support = () => {
   return (

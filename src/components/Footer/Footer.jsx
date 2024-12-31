@@ -4,14 +4,14 @@ import {
   FaTwitter,
   FaInstagramSquare,
 } from "react-icons/fa";
-import style from "../Footer/Footer.module.scss";
-import logo from "../../assets/images/logo.png";
-import alarm_ic from "../../assets/icons/alarm-orange.png";
-import phone_ic from "../../assets/icons/phone-orange.png";
-import mail_ic from "../../assets/icons/mail.png";
-import globe_ic from "../../assets/icons/globe.png";
-import map_ic from "../../assets/icons/map-pin.png";
-import certificate from "../../assets/images/certificate.png";
+// import style from "../Footer/Footer.module.scss";
+// import logo from "../../assets/images/logo.png";
+// import alarm_ic from "../../assets/icons/alarm-orange.png";
+// import phone_ic from "../../assets/icons/phone-orange.png";
+// import mail_ic from "../../assets/icons/mail.png";
+// import globe_ic from "../../assets/icons/globe.png";
+// import map_ic from "../../assets/icons/map-pin.png";
+// import certificate from "../../assets/images/certificate.png";
 
 const Footer = () => {
   return (
