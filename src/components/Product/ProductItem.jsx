@@ -13,8 +13,6 @@ const ProductItem = ({
 }) => {
   const nav = useNavigate();
 
-  console.log("Img:", img);
-
   return (
     <div className={style.product__item}>
       <div className={style.product__item__box}>

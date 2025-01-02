@@ -65,5 +65,28 @@
       "esclipe_bg": "orange-30",
       "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
     }
+  ],
+
+  "achivement": [
+    {
+      "id": "1",
+      "number": "1000+",
+      "title": "Hộ gia đinh tin dùng GreenChop",
+      "icon": "/icons/badge.png"
+    },
+
+    {
+      "id": "2",
+      "number": "600+",
+      "title": "Nhà hàng đã phục vụ GreenChop cho thực khách",
+      "icon": "/icons/badge.png"
+    },
+
+    {
+      "id": "3",
+      "number": "20+",
+      "title": "Tỉnh thành được GreenChop phủ sóng",
+      "icon": "/icons/badge.png"
+    }
   ]
 }

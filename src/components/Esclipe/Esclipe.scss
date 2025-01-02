@@ -10,6 +10,11 @@
     height: 200px;
   }
 
+  &--400 {
+    width: 400px;
+    height: 400px;
+  }
+
   &--left {
     top: -80px;
     left: 30px;
@@ -23,6 +28,16 @@
   &--center {
     top: -50px;
     left: 50px;
+  }
+
+  &--custom {
+    top: 100px;
+    left: 250px;
+  }
+
+  &--custom-02 {
+    left: 30%;
+    bottom: -30px;
   }
 
   &--green-20 {

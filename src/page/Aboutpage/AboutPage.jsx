@@ -1,10 +1,13 @@
 import Header from "../../components/Header/Header";
-import Achivement from "../../components/Achivement/Achivement";
+import Footer from "../../components/Footer/Footer";
+import Esclipe from "../../components/Esclipe/Esclipe";
+import Achivement from "../../components/AchivementSection/Achivement";
 import style from "./AboutPage.module.scss";
 import aboutImg01 from "/images/about-img-01.png";
 import aboutImg02 from "/images/about-img-02.png";
 import aboutImg03 from "/images/about-img-03.png";
 import aboutImg04 from "/images/about-img-04.png";
+import aboutImg05 from "/images/about-img-05.png";
 import quotes_open from "/icons/quotes-open.png";
 import quotes_close from "/icons/quotes-close.png";
 
@@ -97,6 +100,40 @@ const AboutPage = () => {
           <img src={quotes_close} alt="quotes-ic" />
         </div>
       </section>
+
+      <section className={style.destiny}>
+        <div className={style.container}>
+          <div className={style.destiny__container}>
+            <div className={style.destiny__background}>
+              <Esclipe
+                position={"custom"}
+                background={"green-20"}
+                size={"400"}
+              />
+              <Esclipe
+                position={"custom-02"}
+                background={"orange-20"}
+                size={"200"}
+              />
+              <img src={aboutImg05} alt="about-background" />
+            </div>
+            <div className={style.destiny__content}>
+              <h2>Sứ mệnh của GreenChop</h2>
+              <p>
+                Đội ngũ GreenChop gồm những người trẻ năng động và luôn mong
+                muốn cống hiến cho sức khỏe cộng đồng Việt Nam. Trên tiêu chí
+                đó, GreenChop đã và đang tiếp tục góp sức trong công cuộc chống
+                dịch hiện tại và nhu cầu vệ sinh thực phẩm lâu dài. Trong tương
+                lai, thương hiệu sẽ tiếp tục phát triển những dụng cụ ăn uống cá
+                nhân thông minh. Cùng với sự ủng hộ của các đối tác và thực
+                khách, GreenChop hứa hẹn sẽ xây dựng những thói quen và môi
+                trường ăn uống an toàn cho người Việt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 };

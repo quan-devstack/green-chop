@@ -1,5 +1,5 @@
 import Header from "../../components/Header/Header";
-import Achivement from "../../components/Achivement/Achivement";
+import Achivement from "../../components/AchivementSection/Achivement";
 import Product from "../../components/Product/Product";
 import Quality from "../../components/QualitySection/Quality";
 import Support from "../../components/SupportSection/Support";
@@ -18,7 +18,7 @@ const Home = () => {
       <Header />
       <main className={style.main}>
         <section className={style.banner}>
-          <div className={style.container}>
+          <div className="container">
             <div className={style.banner__wrapper}>
               <div className={style.banner__content}>
                 <span className={style.banner__content__subheading}>
@@ -50,15 +50,11 @@ const Home = () => {
           </div>
         </section>
 
-        <section className={style.achivement}>
-          <Achivement />
-        </section>
+        {/* achivement-section */}
+        <Achivement />
 
-        <section className={style.product}>
-          <div className={style.container}>
-            <Product />
-          </div>
-        </section>
+        {/* product-section */}
+        <Product />
 
         <section className={style.news}>
           <div className={style.news__container}>

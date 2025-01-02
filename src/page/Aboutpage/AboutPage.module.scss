@@ -111,3 +111,35 @@
     }
   }
 }
+
+.destiny {
+  position: relative;
+  margin-top: 100px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+  }
+
+  &__background {
+    img {
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__content {
+    margin-top: 70px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      width: 410px;
+      line-height: 1.5;
+    }
+  }
+}
