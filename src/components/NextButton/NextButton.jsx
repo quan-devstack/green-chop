@@ -1,11 +1,11 @@
-import style from "../../components/NextButton/NextButton.module.scss";
-import next_ic from "/icons/next.png";
+import style from "./NextButton.module.scss";
+import nextIc from "/icons/next.png";
 
 const NextButton = () => {
   return (
     <button className={style.btn}>
       Xem thêm
-      <img src={next_ic} alt="next-ic" />
+      <img src={nextIc} alt="next-ic" />
     </button>
   );
 };

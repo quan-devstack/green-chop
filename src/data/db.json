@@ -88,5 +88,78 @@
       "title": "Tỉnh thành được GreenChop phủ sóng",
       "icon": "/icons/badge.png"
     }
+  ],
+
+  "news": [
+    {
+      "id": "1",
+      "thumnail": "/images/new01.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "2",
+      "thumnail": "/images/new01.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "3",
+      "thumnail": "/images/new03.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    }
+  ],
+
+  "qualities": [
+    {
+      "id": "1",
+      "img": "/icons/badge-orange.png",
+      "title": "Chất liệu an toàn",
+      "desc": "Phần đầu đũa được làm bằng bằng gỗ tre, đảm bảo cho sức khỏe người dùng"
+    },
+
+    {
+      "id": "2",
+      "img": "/icons/shield-orange.png",
+      "title": "Vệ sinh và khử khuẩn",
+      "desc": "Đầu đũa mới 100% mỗi bữa ăn, không chung đụng đầu đũa với bất kì ai khác."
+    },
+
+    {
+      "id": "3",
+      "img": "/icons/start-orange.png",
+      "title": "Tiện lợi",
+      "desc": "Thao tác tháo lắp nhanh gọn và đơn giản"
+    },
+
+    {
+      "id": "4",
+      "img": "/icons/saving-orange.png",
+      "title": "Tiết kiệm",
+      "desc": "Giá thành đầu đũa cạnh tranh và hợp lý."
+    },
+
+    {
+      "id": "5",
+      "img": "/icons/unique-orange.png",
+      "title": "Độc quyền",
+      "desc": "GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường Việt Nam hiện tại"
+    },
+
+    {
+      "id": "6",
+      "img": "/icons/delivery-orange.png",
+      "title": "Giao hàng",
+      "desc": "Giao hàng nhanh trong 24h"
+    }
   ]
 }

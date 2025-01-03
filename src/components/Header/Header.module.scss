@@ -1,41 +1,39 @@
 .header {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 
-  &__container {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-
-  &__wrapper {
+  .headerWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    &__nav {
-      ul {
-        display: flex;
-        align-items: center;
+    .headerLogo {
+      img {
+        width: 125px;
+        height: 85px;
+      }
+    }
+
+    .headerNav {
+      display: flex;
+      align-items: center;
+
+      .headerNavItem {
+        a {
+          margin: 0 20px;
+          padding: 20px 0;
+          border-bottom: 1px solid #fff;
+          text-align: center;
+          cursor: pointer;
+
+          &:hover,
+          &.active {
+            border-bottom: 1px solid var(--green-80);
+            color: var(--green-80);
+          }
+        }
       }
 
-      &__item a {
-        margin: 0 20px;
-        padding: 20px 0;
-        border-bottom: 1px solid #fff;
-        text-align: center;
-        cursor: pointer;
-
-        &:hover {
-          border-bottom: 1px solid var(--green-80);
-          color: var(--green-80);
-        }
-
-        &.active {
-          border-bottom: 1px solid var(--green-80);
-          color: var(--green-80);
-        }
-      }
-
-      &__ic {
+      .headerNavIcon {
         margin: 0 20px;
         padding: 10px;
         border-radius: 5px;

@@ -1,15 +1,30 @@
-import { useParams } from "react-router-dom";
-import Product from "../../components/Product/Product";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import ProductSection from "../../components/ProductSection/ProductSection";
+import ChopStructure from "../../components/StructureSection/ChopStructure";
 import style from "./ProductPage.module.scss";
 
 const ProductPage = () => {
-  const { productId } = useParams();
-
   return (
-    <div className={style.container}>
-      {productId}
-      <Product />
-    </div>
+    <>
+      <Header />
+      <main className={style.productPage}>
+        {/* heading-section */}
+        <section className={style.pageHeading}>
+          <div className="container">
+            <h1>Sản phẩm</h1>
+          </div>
+        </section>
+
+        {/* product-section */}
+        <ProductSection />
+
+        {/* intro-section */}
+
+        <ChopStructure />
+      </main>
+      <Footer />
+    </>
   );
 };
 

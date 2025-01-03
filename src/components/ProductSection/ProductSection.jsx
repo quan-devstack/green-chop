@@ -1,14 +1,14 @@
-import ProductItem from "../Product/ProductItem";
+import ProductItem from "./ProductItem";
 import { products } from "../../data/db.json";
-import style from "./Product.module.scss";
+import style from "./ProductSection.module.scss";
 
-const Product = () => {
+const ProductSection = () => {
   return (
     <>
       <section className={style.product}>
         <div className="container">
-          <h2 className={style.product__title}>Sản phẩm</h2>
-          <div className={style.product__list}>
+          <h2 className={style.productTitle}>Sản phẩm</h2>
+          <div className={style.productList}>
             {products.map((product) => (
               <ProductItem
                 key={product.id}
@@ -28,4 +28,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default ProductSection;

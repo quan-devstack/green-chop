@@ -1,26 +1,26 @@
-.achievement {
+.achiev {
   margin-top: 70px;
 
-  .achievement__content {
+  .achievContent {
     text-align: center;
 
-    &__heading {
+    .contentTitle {
       margin: 0 auto;
       width: 500px;
       font-size: 1.8rem;
       font-weight: 600;
     }
 
-    &__desc {
+    .contentDesc {
       margin: 20px auto;
       width: 720px;
     }
   }
 
-  .achievement__wrapper {
+  .achievWrapper {
     position: relative;
 
-    .achievement__list {
+    .achievList {
       display: flex;
       justify-content: center;
       gap: 30px;
@@ -28,7 +28,7 @@
       z-index: 2;
       margin-top: 100px;
 
-      .achievement__item {
+      .achievItem {
         border-radius: 5px;
         padding: 20px;
         width: 300px;
@@ -36,7 +36,7 @@
         box-shadow: 0px 0px 72px 0px rgba(54, 54, 54, 0.1);
         background-color: #fff;
 
-        &__icon {
+        .achievIcon {
           display: block;
           margin-bottom: 20px;
           border-radius: 5px;
@@ -46,12 +46,12 @@
           background-color: var(--orange-10);
         }
 
-        &__number {
+        .achievNumber {
           font-size: 2.5rem;
           font-weight: 800;
         }
 
-        &__desc {
+        .achievDesc {
           margin: 20px 0;
           width: 255px;
           font-size: 1.3rem;

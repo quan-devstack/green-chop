@@ -1,53 +1,42 @@
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.about {
-  padding: 30px;
-  background-color: var(--green-10);
-
-  .title {
-    font-size: 2.2rem;
-    font-weight: 700;
-  }
-}
-
-.achivement {
-  margin-top: 100px;
-}
-
-.detail {
-  margin-top: 100px;
-
-  &__title {
-    text-align: center;
+.aboutPage {
+  .pageHeading {
+    padding: 30px;
+    background-color: var(--green-10);
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
   }
 
-  &__article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px 0;
-    padding: 0 70px;
+  .pageDetail {
+    margin-top: 100px;
 
-    &:nth-of-type(1) {
-      flex-direction: row;
+    .pageTitle {
+      text-align: center;
     }
 
-    &:nth-of-type(2) {
-      flex-direction: row-reverse;
-    }
+    .pageArticle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 50px 0;
+      padding: 0 70px;
 
-    &:nth-of-type(3) {
-      flex-direction: row;
-    }
+      &:nth-of-type(1) {
+        flex-direction: row;
+      }
 
-    &__content {
-      &__desc {
+      &:nth-of-type(2) {
+        flex-direction: row-reverse;
+      }
+
+      &:nth-of-type(3) {
+        flex-direction: row;
+      }
+
+      .articleDesc {
         width: 450px;
         line-height: 1.5;
-
         span {
           display: block;
           margin-bottom: 30px;
@@ -55,91 +44,88 @@
       }
     }
   }
-}
 
-.quotes {
-  margin-top: 100px;
-  position: relative;
-
-  &__background img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    background-color: gray;
-  }
-
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-
-  &__content {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .pageQuotes {
     margin-top: 100px;
-    width: 100%;
-    text-align: center;
-    line-height: 1.5;
-    color: var(--white-txt);
+    position: relative;
 
-    h2 {
-      color: #fff;
+    .quoteBackground {
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        background-color: gray;
+      }
+
+      .backgroundOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
     }
 
-    p {
-      width: 870px;
-      margin: 50px auto 0 auto;
-    }
-
-    img {
+    .quoteContent {
       position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 100px;
+      width: 100%;
+      text-align: center;
+      line-height: 1.5;
+      color: var(--white-txt);
 
-      &:nth-of-type(1) {
+      .quotesTitle {
+        color: #fff;
+      }
+
+      .quotesDesc {
+        width: 870px;
+        margin: 50px auto 0 auto;
+      }
+
+      .quoteIconOpen {
+        position: absolute;
         top: 20%;
         left: 20%;
       }
 
-      &:nth-of-type(2) {
+      .quoteIconClose {
+        position: absolute;
         top: 70%;
         right: 20%;
       }
     }
   }
-}
 
-.destiny {
-  position: relative;
-  margin-top: 100px;
+  .pageDestiny {
+    margin-top: 100px;
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 120px;
-  }
+    .pageWrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 120px;
 
-  &__background {
-    img {
-      display: block;
-      position: relative;
-      z-index: 2;
-    }
-  }
+      .pageThumnail {
+        display: block;
+        position: relative;
+        z-index: 2;
+      }
 
-  &__content {
-    margin-top: 70px;
+      .pageContent {
+        margin-top: 70px;
 
-    h2 {
-      margin-bottom: 20px;
-    }
+        .contentTitle {
+          margin-bottom: 20px;
+        }
 
-    p {
-      width: 410px;
-      line-height: 1.5;
+        .contentDesc {
+          width: 410px;
+          line-height: 1.5;
+        }
+      }
     }
   }
 }

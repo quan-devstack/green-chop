@@ -5,27 +5,27 @@ import style from "./Achivement.module.scss";
 
 const Achivement = () => {
   return (
-    <section className={style.achievement}>
+    <section className={style.achiev}>
       <div className="container">
-        <div className={style.achievement__content}>
-          <h2 className={style.achievement__content__heading}>
+        <div className={style.achievContent}>
+          <h2 className={style.contentTitle}>
             GreenChop: Giữ an toàn trong từng bữa ăn của người việt
           </h2>
-          <p className={style.achievement__content__desc}>
+          <p className={style.contentDesc}>
             Với sự tinh tế trong việc thấu hiểu hành vi của khách hàng cùng ý
             tưởng đột phá, GreenChop đã trở thành sản phẩm không thể thiếu trong
             mọi bữa ăn mùa dịch tại các nhà hàng, khách sạn, quán ăn...
           </p>
         </div>
 
-        <div className={style.achievement__wrapper}>
-          <div className={style.achievement__list}>
-            {achivement.map((ach) => (
+        <div className={style.achievWrapper}>
+          <div className={style.achievList}>
+            {achivement.map((achiev) => (
               <AchivementItem
-                key={ach.id}
-                number={ach.number}
-                title={ach.title}
-                icon={ach.icon}
+                key={achiev.id}
+                number={achiev.number}
+                title={achiev.title}
+                icon={achiev.icon}
               />
             ))}
           </div>

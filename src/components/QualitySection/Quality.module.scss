@@ -1,33 +1,30 @@
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 .quality {
-  &__list {
+  margin-top: 200px;
+
+  .qualityList {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
   }
 
-  &__item {
+  .qualityItem {
     display: flex;
     gap: 15px;
     margin: 20px 0;
 
-    &__img {
+    .itemIcon {
       width: 60px;
       height: 60px;
     }
 
-    &__content {
-      &__title {
+    .itemContent {
+      .itemTitle {
         font-size: 1.4rem;
         margin-bottom: 10px;
       }
 
-      &__desc {
+      .itemDesc {
         width: 230px;
       }
     }
