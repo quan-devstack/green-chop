@@ -5,7 +5,7 @@ import style from "../../components/QualitySection/Quality.module.scss";
 const QualitySection = () => {
   return (
     <section className={style.quality}>
-      <div className="container">
+      <div className={style.qualityContainer}>
         <div className={style.qualityList}>
           {qualities.map((item) => (
             <QualityItem

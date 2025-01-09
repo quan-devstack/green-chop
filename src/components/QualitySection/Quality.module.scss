@@ -1,31 +1,36 @@
 .quality {
   margin-top: 200px;
 
-  .qualityList {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-  }
+  .qualityContainer {
+    margin: 0 auto;
+    max-width: 1200px;
 
-  .qualityItem {
-    display: flex;
-    gap: 15px;
-    margin: 20px 0;
-
-    .itemIcon {
-      width: 60px;
-      height: 60px;
+    .qualityList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
     }
 
-    .itemContent {
-      .itemTitle {
-        font-size: 1.4rem;
-        margin-bottom: 10px;
+    .qualityItem {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+
+      .itemIcon {
+        width: 60px;
+        height: 60px;
       }
 
-      .itemDesc {
-        width: 230px;
+      .itemContent {
+        .itemTitle {
+          font-size: 1.4rem;
+          margin-bottom: 10px;
+        }
+
+        .itemDesc {
+          width: 230px;
+        }
       }
     }
   }

@@ -20,6 +20,11 @@ const ProductPage = () => {
         <ProductSection />
 
         {/* intro-section */}
+        <section className={style.chopIntro}>
+          <div className="container">
+            <div className="animehya"></div>
+          </div>
+        </section>
 
         <ChopStructure />
       </main>

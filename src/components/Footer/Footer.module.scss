@@ -4,10 +4,12 @@
   height: 400px;
   background-color: var(--green-10);
 
-  .footerWrapper {
+  .footerContainer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
 
     .footerColumn01,
     .footerColumn02,
@@ -49,6 +51,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
 
     .footerSocial svg {
       margin: 0 5px;

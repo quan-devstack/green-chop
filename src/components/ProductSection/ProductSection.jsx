@@ -6,7 +6,7 @@ const ProductSection = () => {
   return (
     <>
       <section className={style.product}>
-        <div className="container">
+        <div className={style.productContainer}>
           <h2 className={style.productTitle}>Sản phẩm</h2>
           <div className={style.productList}>
             {products.map((product) => (

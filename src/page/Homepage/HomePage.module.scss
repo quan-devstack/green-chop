@@ -3,10 +3,12 @@
   margin-top: 5px;
   overflow-y: hidden;
 
-  .bannerWrapper {
+  .bannerContainer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
 
     .bannerContent {
       grid-column: span 5;

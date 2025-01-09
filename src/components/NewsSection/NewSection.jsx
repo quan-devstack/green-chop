@@ -6,7 +6,7 @@ import style from "./NewSection.module.scss";
 const NewSection = () => {
   return (
     <section className={style.news}>
-      <div className={"container"}>
+      <div className={style.newsContainer}>
         <div className={style.sectionContent}>
           <h2 className={style.sectionTitle}>Tin tức</h2>
           <p className={style.sectionDesc}>

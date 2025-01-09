@@ -6,7 +6,7 @@ import style from "./Achivement.module.scss";
 const Achivement = () => {
   return (
     <section className={style.achiev}>
-      <div className="container">
+      <div className={style.achievContainer}>
         <div className={style.achievContent}>
           <h2 className={style.contentTitle}>
             GreenChop: Giữ an toàn trong từng bữa ăn của người việt
