@@ -1,5 +1,5 @@
 import style from "./NextButton.module.scss";
-import nextIc from "/icons/next.png";
+import nextIc from "/icons/next-ic.svg";
 
 const NextButton = () => {
   return (

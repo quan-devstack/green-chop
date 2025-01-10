@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import style from "./Header.module.scss";
 import logo from "/images/logo.png";
-import cartIc from "/icons/shopping-cart.png";
-import searchIc from "/icons/search.png";
+import cartIc from "/public/icons/cart-ic.svg";
+import searchIc from "/public/icons/search-ic.svg";
 
 const Header = () => {
   return (
@@ -48,10 +48,10 @@ const Header = () => {
           {/* nav-item */}
           <div className={style.headerNavItem}>
             <NavLink
-              to={"/news"}
+              to={"/product"}
               className={({ isActive }) => (isActive ? style.active : "")}
             >
-              Tin tức
+              Tin Tức
             </NavLink>
           </div>
 

@@ -1,0 +1,30 @@
+{
+  "news": [
+    {
+      "id": "1",
+      "thumnail": "/public/images/news-page/thumbnail-01.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "2",
+      "thumnail": "/public/images/news-page/thumbnail-02.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "3",
+      "thumnail": "/public/images/news-page/thumbnail-03.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    }
+  ]
+}

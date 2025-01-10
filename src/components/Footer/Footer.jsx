@@ -5,13 +5,13 @@ import {
   FaInstagramSquare,
 } from "react-icons/fa";
 import style from "../Footer/Footer.module.scss";
-import logo from "/images/logo.png";
-import alarm_ic from "/icons/alarm-orange.png";
-import phone_ic from "/icons/phone-orange.png";
-import mail_ic from "/icons/mail.png";
-import globe_ic from "/icons/globe.png";
-import map_ic from "/icons/map-pin.png";
-import certificate from "/images/certificate.png";
+import logo from "/public/images/logo.png";
+import certificate from "/public/images/certificate.png";
+import alarmIc from "/public/icons/alarm-ic.svg";
+import phoneIc from "/public/icons/phone-ic.svg";
+import mailIc from "/public/icons/mail-ic.svg";
+import globalIc from "/public/icons/global-ic.svg";
+import mapIc from "/public/icons/map-ic.svg";
 
 const Footer = () => {
   return (
@@ -51,11 +51,11 @@ const Footer = () => {
                 <a href="/">Về GreenChop</a>
               </li>
               <li>
-                <img src={alarm_ic} alt="alarm-ic" />
+                <img src={alarmIc} alt="icon" />
                 Thứ 2 - Thứ 6
               </li>
               <li>
-                <img src={phone_ic} alt="alarm-ic" />
+                <img src={phoneIc} alt="icon" />
                 091 1717 222
               </li>
             </ul>
@@ -67,15 +67,15 @@ const Footer = () => {
             <h4 className={style.columnTitle}>Liên hệ</h4>
             <ul className={style.columnItem}>
               <li>
-                <img src={mail_ic} alt="mail-ic" />
+                <img src={mailIc} alt="icon" />
                 greenchopvn@gmail.com
               </li>
               <li>
-                <img src={globe_ic} alt="global-ic" />
+                <img src={globalIc} alt="icon" />
                 greenchop.vn
               </li>
               <li>
-                <img src={map_ic} alt="map-ic" />
+                <img src={mapIc} alt="icon" />
                 428 Điện Biên Phủ, P11, Quận 10, TPHCM
               </li>
             </ul>

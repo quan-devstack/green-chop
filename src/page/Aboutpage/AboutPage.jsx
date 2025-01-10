@@ -1,15 +1,14 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Esclipe from "../../components/Esclipe/Esclipe";
-import Achivement from "../../components/AchivementSection/Achivement";
+import Achivement from "../../components/Sections/AchevSection/AchevSection";
 import style from "./AboutPage.module.scss";
-import aboutImg01 from "/images/about-img-01.png";
-import aboutImg02 from "/images/about-img-02.png";
-import aboutImg03 from "/images/about-img-03.png";
-import aboutImg04 from "/images/about-img-04.png";
-import aboutImg05 from "/images/about-img-05.png";
-import quotes_open from "/icons/quotes-open.png";
-import quotes_close from "/icons/quotes-close.png";
+
+import thumbnail01 from "/images/about-page/thumbnail-01.png";
+import thumbnail02 from "/images/about-page/thumbnail-02.png";
+import thumbnail03 from "/images/about-page/thumbnail-03.png";
+import thumbnail04 from "/images/about-page/thumbnail-04.png";
+import thumbnail05 from "/images/about-page/thumbnail-05.png";
 
 const AboutPage = () => {
   return (
@@ -17,7 +16,7 @@ const AboutPage = () => {
       <Header />
       <main className={style.aboutPage}>
         <section className={style.pageHeading}>
-          <div className="container">
+          <div className={style.pageContainer}>
             <h1>Về GreenChop</h1>
           </div>
         </section>
@@ -25,54 +24,43 @@ const AboutPage = () => {
         <Achivement />
 
         <section className={style.pageDetail}>
-          <div className={"container"}>
-            <h2 className={style.pageTitle}>Về GreenChop</h2>
-            {/* article-detail */}
-            <article className={style.pageArticle}>
-              <div className={style.articleContent}>
-                <p className={style.articleDesc}>
-                  Dù chỉ mới ra mắt từ đầu mùa dịch Covid 2021, thương hiệu
-                  GreenChop đã trở thành đối tác cung cấp sản phẩm đũa ăn tin
-                  cậy cho những tên tuổi lớn trong phân khúc nhà hàng, khách
-                  sạn, quán ăn,... tại Việt Nam.
-                </p>
-              </div>
-              <div className={style.articleThumnail}>
-                <img src={aboutImg01} alt="about-img" />
-              </div>
-            </article>
-
-            {/* article-detail */}
-            <article className={style.pageArticle}>
-              <div className={style.articleContent}>
-                <p className={style.articleDesc}>
-                  <span>
-                    GreenChop - Tiện gấp dễ gắp: An toàn hơn với Covid Sản phẩm
-                  </span>
-                  chính của công ty là đũa thay đầu GreenChop. Đây chính là cái
-                  tên đã giúp các nhà hàng, khách sạn, quán ăn... đã dần lấy lại
-                  được sự tin tưởng của thực khách giữa mùa Covid. Đũa thay đầu
-                  là ý tưởng đột phá và tinh tế được xây dựng từ việc thấu hiểu
-                  hành vi ăn uống của khách hàng của đội ngũ GreenChop. Sản phẩm
-                  giúp người dùng đảm bảo tối đa sự riêng tư, giãn cách và an
-                  toàn trong bữa ăn, từ đó, xoa dịu tâm lý ngại “ăn ngoài” của
-                  khách hàng.
-                </p>
-              </div>
-              <div className={style.articleThumnail}>
-                <img src={aboutImg02} alt="about-img" />
-              </div>
-            </article>
-
-            {/* article-detail */}
-            <article className={style.pageArticle}>
+          {/* article-detail */}
+          <article className={style.pageArticle}>
+            <div className={style.articleContent}>
+              <h1 className={style.haha}>
+                GreenChop - Nút thắt cho mọi thành công của hàng quán
+              </h1>
               <p className={style.articleDesc}>
-                Không chỉ là các chuỗi nhà hàng, khách sạn,..., nhiều người tiêu
-                dùng cũng đã tin tưởng và chọn lựa GreenChop như một người bạn
-                đồng hành không thể thiếu cùng gia đình của mình.
+                Dù chỉ mới ra mắt từ đầu mùa dịch Covid 2021, thương hiệu
+                GreenChop đã trở thành đối tác cung cấp sản phẩm đũa ăn tin cậy
+                cho những tên tuổi lớn trong phân khúc nhà hàng, khách sạn, quán
+                ăn,... tại Việt Nam. Sản phẩm chính của công ty là đũa thay đầu
+                GreenChop. Đây chính là cái tên đã giúp các nhà hàng, khách sạn,
+                quán ăn... đã dần lấy lại được sự tin tưởng của thực khách giữa
+                mùa Covid. Đũa thay đầu là ý tưởng đột phá và tinh tế được xây
+                dựng từ việc thấu hiểu hành vi ăn uống của khách hàng của đội
+                ngũ GreenChop. Sản phẩm giúp người dùng đảm bảo tối đa sự riêng
+                tư, giãn cách và an toàn trong bữa ăn, từ đó, xoa dịu tâm lý
+                ngại “ăn ngoài” của khách hàng.
               </p>
+            </div>
+            <div className={style.articleThumnail}>
+              <img
+                src={thumbnail01}
+                style={{ width: "100%", borderRadius: "5px" }}
+                alt="about-img"
+              />
+            </div>
+          </article>
+
+          <div className={style.pageContainer}>
+            {/* article-detail */}
+            <article className={style.pageArticle}>
+              <div className={style.articleContent}>
+                <p className={style.articleDesc}></p>
+              </div>
               <div className={style.articleThumnail}>
-                <img src={aboutImg03} alt="about-img" />
+                <img src="" width={500} height={300} alt="about-img" />
               </div>
             </article>
           </div>
@@ -111,13 +99,8 @@ const AboutPage = () => {
 
         <section className={style.pageDestiny}>
           <div className={"container"}>
-            <div className={style.pageWrapper}>
-              <img
-                className={style.pageThumnail}
-                src={aboutImg05}
-                alt="about-background"
-              />
-
+            <div className={style.wrapper}>
+              <img src="" width={500} height={300} alt="about-img" />
               <div className={style.pageContent}>
                 <h2 className={style.contentTitle}>Sứ mệnh của GreenChop</h2>
                 <p className={style.contentDesc}>

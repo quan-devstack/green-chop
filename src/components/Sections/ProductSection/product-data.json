@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title_a": "Combo",
+      "title_b": "quán ăn",
+      "quantity": "1 thùng 1000 đôi",
+      "price": "600.000",
+      "thumbnail": "/public/images/product-page/item-donut.png",
+      "esclipe_bg": "orange-30",
+      "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
+    },
+    {
+      "id": "2",
+      "title_a": "Combo",
+      "title_b": "quán ăn - nhà hàng",
+      "quantity": "1 thùng 2000 đôi",
+      "price": "1.200.000",
+      "thumbnail": "/public/images/product-page/item-dice.png",
+      "esclipe_bg": "green-30",
+      "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
+    },
+    {
+      "id": "3",
+      "title_a": "Combo  quán ăn",
+      "title_b": "nhà hàng - khách sạn",
+      "quantity": "1 thùng 3000 đôi",
+      "price": "1.800.000",
+      "thumbnail": "/public/images/product-page/item-gamepad.png",
+      "esclipe_bg": "orange-30",
+      "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
+    },
+    {
+      "id": "4",
+      "title_a": "Combo",
+      "title_b": "gia đình bé xinh",
+      "quantity": "1 thùng 100 đôi",
+      "price": "60.000",
+      "thumbnail": "/public/images/product-page/item-donut.png",
+      "esclipe_bg": "orange-30",
+      "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
+    },
+    {
+      "id": "5",
+      "title_a": "Combo",
+      "title_b": "Gia đình",
+      "quantity": "1 thùng 200 đôi",
+      "price": "120.000",
+      "thumbnail": "/public/images/product-page/item-dice.png",
+      "esclipe_bg": "green-30",
+      "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
+    },
+    {
+      "id": "6",
+      "title_a": "Combo",
+      "title_b": "Đại gia đình",
+      "quantity": "1 thùng 300 đôi",
+      "price": "180.000",
+      "thumbnail": "/public/images/product-page/item-gamepad.png",
+      "esclipe_bg": "orange-30",
+      "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
+    }
+  ]
+}

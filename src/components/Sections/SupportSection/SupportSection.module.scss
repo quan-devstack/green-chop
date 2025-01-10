@@ -1,0 +1,61 @@
+.form {
+  grid-column: span 6;
+
+  .formContent {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .formGroup {
+    margin-top: 20px;
+
+    input {
+      border: 1px solid var(--gray-50);
+      border-radius: 7px;
+      padding: 15px;
+      width: 100%;
+      outline: none;
+    }
+
+    input::placeholder {
+      font-size: 1rem;
+      color: var(--gray-50);
+    }
+
+    textarea {
+      border: 1px solid var(--gray-50);
+      border-radius: 7px;
+      padding: 10px;
+      width: 100%;
+      font-size: 1rem;
+      font-family: "Roboto", serif;
+      color: var(--gray-50);
+      outline: none;
+    }
+
+    button {
+      display: block;
+      margin-left: auto;
+      border: 1px solid var(--green-80);
+      border-radius: 5px;
+      padding: 10px;
+      width: 100px;
+      font-weight: 600;
+      color: var(--white-txt);
+      background-color: var(--green-80);
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid var(--orange-80);
+        background-color: var(--orange-60);
+      }
+    }
+  }
+
+  .formGroup:has(input:nth-of-type(2)) {
+    display: flex;
+    gap: 20px;
+  }
+}

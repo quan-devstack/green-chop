@@ -2,9 +2,15 @@
   .pageHeading {
     padding: 30px;
     background-color: var(--green-10);
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
+
+    .pageContainer {
+      margin: 0 auto;
+      max-width: 1200px;
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+      }
     }
   }
 
@@ -16,9 +22,9 @@
     }
 
     .pageArticle {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
       margin: 50px 0;
       padding: 0 70px;
 
@@ -34,9 +40,17 @@
         flex-direction: row;
       }
 
+      .articleContent {
+        text-align: center;
+
+        .haha {
+          font-size: 36px;
+        }
+      }
+
       .articleDesc {
-        width: 450px;
-        line-height: 1.5;
+        margin: 20px auto;
+
         span {
           display: block;
           margin-bottom: 30px;
@@ -103,9 +117,10 @@
   .pageDestiny {
     margin-top: 100px;
 
-    .pageWrapper {
+    .wrapper {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 0 120px;
 
       .pageThumnail {
@@ -115,8 +130,6 @@
       }
 
       .pageContent {
-        margin-top: 70px;
-
         .contentTitle {
           margin-bottom: 20px;
         }

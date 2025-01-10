@@ -1,0 +1,45 @@
+{
+  "qualities": [
+    {
+      "id": "1",
+      "icon": "/icons/badge-ic-02.svg",
+      "title": "Chất liệu an toàn",
+      "desc": "Phần đầu đũa được làm bằng bằng gỗ tre, đảm bảo cho sức khỏe người dùng"
+    },
+
+    {
+      "id": "2",
+      "icon": "/icons/shield-ic.svg",
+      "title": "Vệ sinh và khử khuẩn",
+      "desc": "Đầu đũa mới 100% mỗi bữa ăn, không chung đụng đầu đũa với bất kì ai khác."
+    },
+
+    {
+      "id": "3",
+      "icon": "/icons/service-ic.svg",
+      "title": "Tiện lợi",
+      "desc": "Thao tác tháo lắp nhanh gọn và đơn giản"
+    },
+
+    {
+      "id": "4",
+      "icon": "/icons/saving-ic.svg",
+      "title": "Tiết kiệm",
+      "desc": "Giá thành đầu đũa cạnh tranh và hợp lý."
+    },
+
+    {
+      "id": "5",
+      "icon": "/icons/unique-ic.svg",
+      "title": "Độc quyền",
+      "desc": "GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường Việt Nam hiện tại"
+    },
+
+    {
+      "id": "6",
+      "icon": "/icons/delivery-ic.svg",
+      "title": "Giao hàng",
+      "desc": "Giao hàng nhanh trong 24h"
+    }
+  ]
+}

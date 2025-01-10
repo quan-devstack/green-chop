@@ -1,27 +1,18 @@
 .esclipe {
   position: absolute;
-  z-index: 1;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
-
-  &--left {
-    top: -80px;
-    left: 30px;
-  }
-
-  &--right {
-    bottom: -80px;
-    right: 30px;
-  }
-
-  &--center {
-    top: -50px;
-    left: 50px;
-  }
+  z-index: 1;
 
   &--green-20 {
     background-color: var(--green-20);
+  }
+
+  &--green-30 {
+    background-color: var(--green-30);
+  }
+
+  &--orange-10 {
+    background-color: var(--orange-10);
   }
 
   &--orange-20 {
@@ -30,9 +21,5 @@
 
   &--orange-30 {
     background-color: var(--orange-30);
-  }
-
-  &--green-30 {
-    background-color: var(--green-30);
   }
 }
