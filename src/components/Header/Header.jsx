@@ -1,80 +1,90 @@
 import { NavLink } from "react-router-dom";
 import style from "./Header.module.scss";
 import logo from "/images/logo.png";
-import cartIc from "/public/icons/cart-ic.svg";
-import searchIc from "/public/icons/search-ic.svg";
+import cartIc from "/icons/cart-ic.svg";
+import searchIc from "/icons/search-ic.svg";
 
 const Header = () => {
   return (
     <header className={style.header}>
-      <div className={style.headerContainer}>
-        {/* header-logo */}
-        <div className={style.headerLogo}>
-          <img src={logo} alt="green-logo" />
+      <div className="container">
+        <div className={style.layout}>
+          {/* logo */}
+          <img src={logo} alt="green-logo" className={style.logo} />
+
+          {/* nav-bar */}
+          <nav className={style.navBar}>
+            {/* nav-item */}
+            <div className={style.navItem}>
+              <NavLink
+                to={"/"}
+                className={({ isActive }) =>
+                  isActive ? `${style.active}` : ""
+                }
+              >
+                Trang chủ
+              </NavLink>
+            </div>
+
+            {/* nav-item */}
+            <div className={style.navItem}>
+              <NavLink
+                to={"/about"}
+                className={({ isActive }) =>
+                  isActive ? `${style.active}` : ""
+                }
+              >
+                Về GreenChop
+              </NavLink>
+            </div>
+
+            {/* nav-item */}
+            <div className={style.navItem}>
+              <NavLink
+                to={"/product"}
+                className={({ isActive }) =>
+                  isActive ? `${style.active}` : ""
+                }
+              >
+                Sản Phẩm
+              </NavLink>
+            </div>
+
+            {/* nav-item */}
+            <div className={style.navItem}>
+              <NavLink
+                to={"/news"}
+                className={({ isActive }) =>
+                  isActive ? `${style.active}` : ""
+                }
+              >
+                Tin Tức
+              </NavLink>
+            </div>
+
+            {/* nav-item */}
+            <div className={style.navItem}>
+              <NavLink
+                to={"/contact"}
+                className={({ isActive }) =>
+                  isActive ? `${style.active}` : ""
+                }
+              >
+                Liên Hệ
+              </NavLink>
+            </div>
+
+            {/* nav-icon */}
+            <div className={style.navIcon}>
+              <img src={cartIc} alt="cart-ic" />
+            </div>
+
+            {/* nav-icon */}
+            <div className={style.navIcon}>
+              <img src={searchIc} alt="search-ic" />
+            </div>
+          </nav>
         </div>
-
-        {/* header-navbar */}
-        <nav className={style.headerNav}>
-          {/* nav-item */}
-          <div className={style.headerNavItem}>
-            <NavLink
-              to={"/"}
-              className={({ isActive }) => (isActive ? style.active : "")}
-            >
-              Trang chủ
-            </NavLink>
-          </div>
-
-          {/* nav-item */}
-          <div className={style.headerNavItem}>
-            <NavLink
-              to={"/about"}
-              className={({ isActive }) => (isActive ? style.active : "")}
-            >
-              Về GreenChop
-            </NavLink>
-          </div>
-
-          {/* nav-item */}
-          <div className={style.headerNavItem}>
-            <NavLink
-              to={"/product"}
-              className={({ isActive }) => (isActive ? style.active : "")}
-            >
-              Sản phẩm
-            </NavLink>
-          </div>
-
-          {/* nav-item */}
-          <div className={style.headerNavItem}>
-            <NavLink
-              to={"/product"}
-              className={({ isActive }) => (isActive ? style.active : "")}
-            >
-              Tin Tức
-            </NavLink>
-          </div>
-
-          {/* nav-item */}
-          <div className={style.headerNavItem}>
-            <NavLink
-              to={"/contact"}
-              className={({ isActive }) => (isActive ? style.active : "")}
-            >
-              Liên hệ
-            </NavLink>
-          </div>
-
-          {/* nav-icon */}
-          <div className={style.headerNavIcon}>
-            <img src={cartIc} alt="cart-ic" />
-          </div>
-
-          {/* nav-icon */}
-          <div className={style.headerNavIcon}>
-            <img src={searchIc} alt="search-ic" />
-          </div>
-        </nav>
       </div>
     </header>
   );

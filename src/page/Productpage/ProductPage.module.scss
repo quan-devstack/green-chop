@@ -1,30 +1,31 @@
 .productPage {
-  .heading {
+  // header-section
+  .pageHeader {
     padding: 30px;
     background-color: var(--green-10);
-
-    .headingContent {
+    .title {
       font-size: 2.2rem;
       font-weight: 700;
     }
   }
 
-  .pageIntro {
+  // intro-section
+  .intro {
     margin-top: 100px;
 
-    .wrapper {
+    .layout {
       display: flex;
       justify-content: center;
       gap: 30px;
       position: relative;
 
-      .svg01 {
+      .unknownShape:nth-of-type(1) {
         position: absolute;
         left: 0;
         z-index: 1;
       }
 
-      .svg02 {
+      .unknownShape:nth-of-type(2) {
         position: absolute;
         right: 0;
         bottom: 60px;
@@ -35,14 +36,14 @@
         margin-top: 80px;
         z-index: 2;
 
-        .contentTitle {
+        .title {
           display: flex;
           flex-direction: column;
           font-size: 32px;
           font-weight: 600;
         }
 
-        .contentDesc {
+        .desc {
           margin-top: 10px;
           width: 400px;
           line-height: 1.5;
@@ -55,39 +56,40 @@
     }
   }
 
-  .guide {
+  // guide-section
+  .guideline {
     margin-top: 200px;
 
-    .content {
+    .header {
       text-align: center;
-
-      .contentTitle {
+      .title {
         display: flex;
         flex-direction: column;
       }
 
-      .contentDesc {
+      .subtitle {
         margin: 20px auto;
         width: 400px;
         line-height: 1.5;
       }
     }
 
-    .wrapper {
+    .layout {
       display: flex;
       justify-content: center;
       gap: 40px;
       margin-top: 50px;
 
-      .step {
+      .guideStep {
         position: relative;
 
         .stepContent {
           display: flex;
+          justify-content: space-evenly;
           align-items: center;
           gap: 10px;
           position: relative;
-          width: 300px;
+          width: 330px;
           z-index: 2;
 
           .stepNumber {
@@ -101,9 +103,130 @@
           }
 
           .stepDesc {
+            width: 170px;
             line-height: 1.5;
           }
         }
+      }
+    }
+
+    .guideMoreInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-top: 70px;
+
+      .guideBox {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+        box-shadow: 0px 0px 72px 0px rgba(54, 54, 54, 0.1);
+        width: 500px;
+        height: 300px;
+        background-color: #fff;
+
+        .boxContent {
+          margin: auto;
+          text-align: left;
+        }
+
+        .boxBorder {
+          display: block;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          width: 40px;
+          height: 100%;
+          background-color: var(--green-80);
+        }
+      }
+
+      .guideThumbnail {
+        max-width: none;
+      }
+    }
+  }
+
+  // protect-section
+  .protection {
+    margin-top: 100px;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .title {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+    }
+
+    .body {
+      position: relative;
+      margin-top: 50px;
+      overflow: hidden;
+
+      .protectInfo {
+        margin-top: 30px;
+
+        .layout {
+          display: flex;
+          justify-content: center;
+          gap: 70px;
+          position: relative;
+          z-index: 2;
+
+          .guideThumbnail {
+            max-width: none;
+          }
+
+          .guideDesc {
+            width: 600px;
+
+            .guideIcon {
+              display: block;
+              margin-left: auto;
+            }
+          }
+        }
+
+        .background {
+          position: absolute;
+          top: 0;
+          left: 10%;
+          width: 100%;
+          height: 330px;
+          z-index: 1;
+          background-color: var(--green-10);
+        }
+      }
+    }
+
+    .protectInfo:nth-child(2) {
+      position: relative;
+      margin-top: 100px;
+
+      .layout {
+        flex-direction: row-reverse;
+
+        .guideDesc {
+          .guideIcon {
+            display: block;
+            margin-top: 10px;
+            margin-left: 0;
+          }
+        }
+      }
+
+      .background {
+        position: absolute;
+        top: -30px;
+        right: 10%;
+        width: 100%;
+        height: 330px;
+        z-index: 1;
+        background-color: var(--orange-10);
       }
     }
   }

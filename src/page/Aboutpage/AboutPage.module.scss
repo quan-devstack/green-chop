@@ -1,32 +1,23 @@
 .aboutPage {
-  .pageHeading {
+  // header-section
+  .pageHeader {
     padding: 30px;
     background-color: var(--green-10);
 
-    .pageContainer {
-      margin: 0 auto;
-      max-width: 1200px;
-
-      h1 {
-        font-size: 2rem;
-        font-weight: 700;
-      }
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
     }
   }
 
-  .pageDetail {
-    margin-top: 100px;
-
-    .pageTitle {
-      text-align: center;
-    }
-
-    .pageArticle {
-      // display: flex;
-      // justify-content: space-between;
-      // align-items: center;
+  // detail-section
+  .details {
+    .article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin: 50px 0;
-      padding: 0 70px;
+      padding: 0 40px;
 
       &:nth-of-type(1) {
         flex-direction: row;
@@ -40,38 +31,31 @@
         flex-direction: row;
       }
 
-      .articleContent {
-        text-align: center;
-
-        .haha {
-          font-size: 36px;
-        }
-      }
-
       .articleDesc {
         margin: 20px auto;
+        width: 500px;
+      }
 
-        span {
-          display: block;
-          margin-bottom: 30px;
-        }
+      .articleThumbnail {
+        max-width: none;
       }
     }
   }
 
-  .pageQuotes {
+  // quotes-section
+  .quotes {
     margin-top: 100px;
     position: relative;
 
-    .quoteBackground {
-      img {
+    .quoteBg {
+      .bgImage {
         display: block;
         margin: 0 auto;
         width: 100%;
         background-color: gray;
       }
 
-      .backgroundOverlay {
+      .bgOverlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -91,22 +75,22 @@
       line-height: 1.5;
       color: var(--white-txt);
 
-      .quotesTitle {
+      .title {
         color: #fff;
       }
 
-      .quotesDesc {
+      .desc {
         width: 870px;
         margin: 50px auto 0 auto;
       }
 
-      .quoteIconOpen {
+      .openIc {
         position: absolute;
         top: 20%;
         left: 20%;
       }
 
-      .quoteIconClose {
+      .closeIc {
         position: absolute;
         top: 70%;
         right: 20%;
@@ -114,27 +98,31 @@
     }
   }
 
-  .pageDestiny {
+  // goal-section
+  .goal {
     margin-top: 100px;
 
-    .wrapper {
+    .layout {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 120px;
 
-      .pageThumnail {
-        display: block;
+      .goalThumbnail {
         position: relative;
-        z-index: 2;
+
+        .image {
+          position: relative;
+          z-index: 2;
+        }
       }
 
-      .pageContent {
-        .contentTitle {
+      .goalContent {
+        .title {
           margin-bottom: 20px;
         }
 
-        .contentDesc {
+        .desc {
           width: 410px;
           line-height: 1.5;
         }

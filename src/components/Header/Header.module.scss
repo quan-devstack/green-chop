@@ -1,50 +1,43 @@
 .header {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 
-  .headerContainer {
+  .layout {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1200px;
 
-    .headerLogo {
-      img {
-        width: 125px;
-        height: 85px;
-      }
+    .logo {
+      display: block;
+      width: 125px;
+      height: 85px;
     }
 
-    .headerNav {
+    .navBar {
       display: flex;
       align-items: center;
 
-      .headerNavItem {
-        a {
-          margin: 0 20px;
-          padding: 20px 0;
-          border-bottom: 1px solid #fff;
-          text-align: center;
-          cursor: pointer;
+      .navItem a {
+        margin: 0 20px;
+        padding: 20px 0;
+        border-bottom: 1px solid #fff;
+        text-align: center;
+        cursor: pointer;
 
-          &:hover,
-          &.active {
-            border-bottom: 1px solid var(--green-80);
-            color: var(--green-80);
-          }
+        &:hover,
+        &.active {
+          border-bottom: 1px solid var(--green-80);
+          color: var(--green-80);
         }
       }
 
-      .headerNavIcon {
-        margin: 0 20px;
+      .navIcon {
+        display: block;
+        margin: 0 10px;
         padding: 10px;
         border-radius: 5px;
+        width: 45px;
+        height: 45px;
         cursor: pointer;
-
-        img {
-          width: 25px;
-          height: 25px;
-        }
 
         &:hover {
           background-color: var(--green-80);

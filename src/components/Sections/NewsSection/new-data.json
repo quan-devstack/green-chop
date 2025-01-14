@@ -2,7 +2,7 @@
   "news": [
     {
       "id": "1",
-      "thumnail": "/public/images/news-page/thumbnail-01.png",
+      "thumnail": "/images/news-page/thumbnail-01.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
@@ -11,7 +11,7 @@
 
     {
       "id": "2",
-      "thumnail": "/public/images/news-page/thumbnail-02.png",
+      "thumnail": "/images/news-page/thumbnail-02.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
@@ -20,7 +20,7 @@
 
     {
       "id": "3",
-      "thumnail": "/public/images/news-page/thumbnail-03.png",
+      "thumnail": "/images/news-page/thumbnail-03.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",

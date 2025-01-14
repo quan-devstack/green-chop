@@ -3,12 +3,12 @@ import NewsSection from "../../components/Sections/NewsSection/NewSection";
 import ProductSection from "../../components/Sections/ProductSection/ProductSection";
 import QualitySection from "../../components/Sections/QualitySection/QualitySection";
 import SupportSection from "../../components/Sections/SupportSection/SupportSection";
-import ChopStructure from "../../components/Sections/StructureSection/StructureSection";
+import CompSection from "../../components/Sections/CompSection/CompSection";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import style from "./HomePage.module.scss";
 import banner from "/images/home-page/main-banner.png";
-import thumbnail from "/public/images/home-page/supp-thumbnail.png";
+import thumbnail from "/images/home-page/supp-thumbnail.png";
 
 const HomePage = () => {
   return (
@@ -20,12 +20,11 @@ const HomePage = () => {
         {/* banner-section */}
         <section className={style.banner}>
           <div className="container">
-            <div className={style.wrapper}>
+            <div className={style.layout}>
               {/* banner-content */}
-              <div className={style.bannerContent}>
-                <h1 className={style.title}>
-                  GreenChop: Tiện gấp dễ gắp, An toàn hơn giữa mùa Covid
-                </h1>
+              <div className={style.content}>
+                <span className={style.slogan}>GreenChop: Tiện gấp dễ gắp</span>
+                <h1 className={style.title}>An toàn hơn giữa mùa Covid</h1>
                 <p className={style.desc}>
                   GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường
                   hiện tại. Sản phẩm cho phép người dùng tháo lắp và thay mới
@@ -35,15 +34,11 @@ const HomePage = () => {
                 </p>
               </div>
 
-              {/* banner-background*/}
-              <div className={style.bannerThumbnail}>
-                <img
-                  src={banner}
-                  alt="main-banner"
-                  className={style.thumbnailSrc}
-                />
-                <div className={style.thumbnailCover}>
-                  <h1>Green Chop</h1>
+              {/* banner-thumbnail*/}
+              <div className={style.thumbnail}>
+                <img src={banner} alt="main-banner" className={style.image} />
+                <div className={style.cover}>
+                  <h1 className={style.coverText}>Green Chop</h1>
                 </div>
               </div>
             </div>
@@ -59,8 +54,8 @@ const HomePage = () => {
         {/* news-section */}
         <NewsSection />
 
-        {/* structure-section */}
-        <ChopStructure />
+        {/* component-section */}
+        <CompSection />
 
         {/* quality-section */}
         <QualitySection />

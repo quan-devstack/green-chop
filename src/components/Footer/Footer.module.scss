@@ -4,17 +4,12 @@
   height: 400px;
   background-color: var(--green-10);
 
-  .footerContainer {
+  .containerInner {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
-    margin: 0 auto;
-    max-width: 1200px;
 
-    .footerColumn01,
-    .footerColumn02,
-    .footerColumn03,
-    .footerColumn04 {
+    .footerColumn {
       grid-column: span 3;
     }
 
@@ -47,7 +42,7 @@
     margin: 20px 0;
   }
 
-  .footerEnd {
+  .footerRow {
     display: flex;
     align-items: center;
     justify-content: space-between;

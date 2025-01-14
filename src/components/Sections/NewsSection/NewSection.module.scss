@@ -1,21 +1,16 @@
 .news {
   margin-top: 50px;
 
-  .newsContainer {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-
-  .sectionContent {
+  .header {
     margin-top: 50px;
 
-    .sectionTitle {
+    .title {
       font-size: 2rem;
       font-weight: 800;
       text-align: center;
     }
 
-    .sectionDesc {
+    .subtitle {
       display: flex;
       flex-direction: column;
       margin-top: 20px;
@@ -29,35 +24,43 @@
     gap: 10px;
     margin-top: 30px;
 
-    .newsItem {
-      .newsThumnail {
-        width: 385px;
-        height: 273px;
-      }
+    .newsCard {
+      grid-column: span 4;
 
-      .newsCaption {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .newsCaptionText {
-          color: var(--green-80);
+      .cardImage {
+        .image {
+          width: 385px;
+          height: 273px;
         }
 
-        .newsCaptionDate {
+        .caption {
           display: flex;
+          justify-content: space-between;
           align-items: center;
-          gap: 10px;
+
+          .captionText {
+            color: var(--green-80);
+          }
+
+          .captionDate {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
         }
       }
 
-      .newsTitle {
-        margin: 20px 0;
-        font-weight: 500;
-      }
+      .cardContent {
+        width: 360px;
 
-      .newsDesc {
-        line-height: 1.5;
+        .cardTitle {
+          margin: 20px 0;
+          font-weight: 500;
+        }
+
+        .cardDesc {
+          line-height: 1.5;
+        }
       }
     }
   }

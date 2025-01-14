@@ -1,42 +1,43 @@
 .achiev {
   margin-top: 70px;
 
-  .achievContent {
-    text-align: center;
-
+  .header {
     .title {
       margin: 0 auto;
-      width: 600px;
-      font-size: 2.3rem;
+      width: 500px;
+      font-size: 2rem;
       font-weight: 800;
     }
 
-    .desc {
+    .subtitle {
       margin: 20px auto;
       width: 720px;
     }
   }
 
-  .wrapper {
+  .body {
     position: relative;
 
-    .achievList {
+    .achevList {
       display: flex;
       justify-content: center;
       gap: 30px;
       position: relative;
-      z-index: 2;
       margin-top: 100px;
+      z-index: 2;
 
-      .achievItem {
+      .achevCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 20px;
         border-radius: 5px;
-        width: 300px;
-        height: 300px;
+        width: 295px;
+        height: 330px;
         box-shadow: 0px 0px 72px 0px rgba(54, 54, 54, 0.1);
         background-color: #fff;
 
-        .achievIcon {
+        .cardIcon {
           display: block;
           margin-bottom: 20px;
           padding: 20px;
@@ -46,16 +47,24 @@
           background-color: var(--orange-10);
         }
 
-        .achievNumber {
+        .cardNumber {
           font-size: 2.5rem;
           font-weight: 800;
         }
 
-        .achievDesc {
+        .cardDesc {
           margin: 20px 0;
           width: 255px;
           font-size: 1.3rem;
         }
+      }
+
+      .achevCard:nth-of-type(2) {
+        align-self: center;
+        position: relative;
+        top: -30px;
+        width: 342px;
+        height: 390px;
       }
     }
   }

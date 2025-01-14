@@ -1,9 +1,10 @@
-.struc {
+.comp {
   position: relative;
+  margin-top: 100px;
 
-  .strucContent {
-    .strucTitle,
-    .strucDesc {
+  .header {
+    .title,
+    .subtitle {
       display: flex;
       flex-direction: column;
       margin: 20px auto;
@@ -11,16 +12,16 @@
       text-align: center;
     }
 
-    .strucTitle {
+    .title {
       font-size: 2rem;
     }
 
-    .strucDesc {
+    .subtitle {
       font-weight: 400;
     }
   }
 
-  .strucDetail {
+  .compList {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -28,33 +29,31 @@
     z-index: 2;
     margin-top: 30px;
 
-    .componentCard {
+    .compCard {
       border-radius: 7px;
       width: 345px;
       height: 400px;
       background-color: var(--white-background);
 
-      .thumbnail {
+      .cardImage {
         width: 346px;
         height: 195px;
         object-fit: cover;
       }
 
-      .title {
-        padding: 15px 30px;
-        font-size: 1.5rem;
-        color: var(--orange-70);
-      }
-
-      .desc {
-        display: flex;
-        flex-direction: column;
+      .cardContent {
         padding: 0 30px;
+
+        .cardTitle {
+          margin-top: 10px;
+          font-size: 1.5rem;
+          color: var(--orange-70);
+        }
       }
     }
   }
 
-  .cover {
+  .background {
     position: absolute;
     top: 270px;
     width: 100%;

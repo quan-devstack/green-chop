@@ -1,4 +1,4 @@
-import "./Esclipe.scss";
+import style from "./Esclipe.module.scss";
 
 const Esclipe = ({ background, size, position }) => {
   const styles = {
@@ -8,7 +8,10 @@ const Esclipe = ({ background, size, position }) => {
   };
 
   return (
-    <div style={styles} className={`esclipe esclipe--${background}`}></div>
+    <div
+      style={styles}
+      className={`${style.esclipe} ${style[background]}`}
+    ></div>
   );
 };
 

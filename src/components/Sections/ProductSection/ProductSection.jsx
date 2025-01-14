@@ -1,4 +1,4 @@
-import ProductItem from "./ProductItem";
+import ProductCard from "./ProductCard";
 import { products } from "./product-data.json";
 import style from "./ProductSection.module.scss";
 
@@ -6,11 +6,12 @@ const ProductSection = () => {
   return (
     <>
       <section className={style.product}>
-        <h1 className={style.heading}>Sản phẩm</h1>
         <div className={"container"}>
+          <h2 className={style.header}>Sản phẩm</h2>
+
           <div className={style.productList}>
             {products.map((product) => (
-              <ProductItem
+              <ProductCard
                 key={product.id}
                 id={product.id}
                 thumbnail={product.thumbnail}

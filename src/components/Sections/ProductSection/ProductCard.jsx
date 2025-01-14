@@ -2,9 +2,8 @@ import { useNavigate } from "react-router-dom";
 import Esclipe from "../../Esclipe/Esclipe";
 import style from "./ProductSection.module.scss";
 
-const ProductItem = ({
+const ProductCard = ({
   id,
-  img,
   title_a,
   title_b,
   quantity,
@@ -17,7 +16,7 @@ const ProductItem = ({
   return (
     <div className={style.productCard}>
       <div className={style.cardImage}>
-        <img src={thumbnail} alt="product-img" />
+        <img src={thumbnail} alt="product-img" className={style.image} />
         <Esclipe
           size={{ width: "200px", height: "200px" }}
           position={{ top: "-50px", left: "50px" }}
@@ -33,18 +32,18 @@ const ProductItem = ({
       <hr className={style.cardDivider} />
 
       <div className={style.cardNumber}>
-        <span className={style.productQuantity}>{quantity}</span>
-        <span className={style.productPrice}>Giá: {price} vnđ</span>
+        <span className={style.quantity}>{quantity}</span>
+        <span className={style.price}>Giá: {price} vnđ</span>
       </div>
 
       <button
         className={style.cardButton}
         onClick={() => nav(`/product/${id}`)}
       >
-        Thêm vào giỏ hàng
+        Xem chi tiết
       </button>
     </div>
   );
 };
 
-export default ProductItem;
+export default ProductCard;

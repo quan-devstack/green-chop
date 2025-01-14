@@ -1,31 +1,31 @@
 import Esclipe from "../../Esclipe/Esclipe";
-import AchivementItem from "./AchevItem";
+import AchevCard from "./AchevCard";
 import { achivement } from "./achev-data.json";
 import style from "./AchevSection.module.scss";
-import bageIc from "/public/icons/badge-ic-01.svg";
+import bageIc from "/icons/badge-ic-01.svg";
 
 const Achivement = () => {
   return (
     <section className={style.achiev}>
-      <div className={style.achievContent}>
-        <h1 className={style.title}>
-          GreenChop: Giữ an toàn trong từng bữa ăn của người việt
-        </h1>
-        <p className={style.desc}>
-          Với sự tinh tế trong việc thấu hiểu hành vi của khách hàng cùng ý
-          tưởng đột phá, GreenChop đã trở thành sản phẩm không thể thiếu trong
-          mọi bữa ăn mùa dịch tại các nhà hàng, khách sạn, quán ăn...
-        </p>
-      </div>
-
       <div className="container">
-        <div className={style.wrapper}>
-          <div className={style.achievList}>
-            {achivement.map((achiev) => (
-              <AchivementItem
-                key={achiev.id}
-                number={achiev.number}
-                title={achiev.title}
+        <div className={style.header}>
+          <h2 className={style.title}>
+            GreenChop: Giữ an toàn trong từng bữa ăn của người việt
+          </h2>
+          <p className={style.subtitle}>
+            Với sự tinh tế trong việc thấu hiểu hành vi của khách hàng cùng ý
+            tưởng đột phá, GreenChop đã trở thành sản phẩm không thể thiếu trong
+            mọi bữa ăn mùa dịch tại các nhà hàng, khách sạn, quán ăn...
+          </p>
+        </div>
+
+        <div className={style.body}>
+          <div className={style.achevList}>
+            {achivement.map((achev) => (
+              <AchevCard
+                key={achev.id}
+                number={achev.number}
+                title={achev.title}
                 icon={bageIc}
               />
             ))}

@@ -1,31 +1,31 @@
 .quality {
-  margin-top: 200px;
+  margin-top: 150px;
 
-  .qualityList {
+  .layout {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-  }
 
-  .qualityItem {
-    display: flex;
-    gap: 15px;
-    margin: 20px 0;
+    .qualityCard {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
 
-    .icon {
-      width: 60px;
-      height: 60px;
-    }
-
-    .content {
-      .title {
-        font-size: 1.4rem;
-        margin-bottom: 10px;
+      .cardIcon {
+        width: 60px;
+        height: 60px;
       }
 
-      .desc {
-        width: 230px;
+      .cardContent {
+        .cardTitle {
+          font-size: 1.4rem;
+          margin-bottom: 10px;
+        }
+
+        .cardDesc {
+          width: 230px;
+        }
       }
     }
   }

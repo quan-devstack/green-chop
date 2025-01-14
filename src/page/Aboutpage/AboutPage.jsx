@@ -9,72 +9,90 @@ import thumbnail02 from "/images/about-page/thumbnail-02.png";
 import thumbnail03 from "/images/about-page/thumbnail-03.png";
 import thumbnail04 from "/images/about-page/thumbnail-04.png";
 import thumbnail05 from "/images/about-page/thumbnail-05.png";
+import quotesOpen from "/icons/quote-open-ic.svg";
+import quoteClose from "/icons/quotes-close-ic.svg";
 
 const AboutPage = () => {
   return (
     <>
       <Header />
       <main className={style.aboutPage}>
-        <section className={style.pageHeading}>
-          <div className={style.pageContainer}>
-            <h1>Về GreenChop</h1>
+        {/* header-section */}
+        <section className={style.pageHeader}>
+          <div className={"container"}>
+            <h1 className={style.title}>Về GreenChop</h1>
           </div>
         </section>
 
+        {/* achiement-section */}
         <Achivement />
 
-        <section className={style.pageDetail}>
-          {/* article-detail */}
-          <article className={style.pageArticle}>
-            <div className={style.articleContent}>
-              <h1 className={style.haha}>
-                GreenChop - Nút thắt cho mọi thành công của hàng quán
-              </h1>
+        {/* details-section */}
+        <section className={style.details}>
+          <div className={"container"}>
+            {/* article */}
+            <article className={style.article}>
               <p className={style.articleDesc}>
                 Dù chỉ mới ra mắt từ đầu mùa dịch Covid 2021, thương hiệu
                 GreenChop đã trở thành đối tác cung cấp sản phẩm đũa ăn tin cậy
                 cho những tên tuổi lớn trong phân khúc nhà hàng, khách sạn, quán
-                ăn,... tại Việt Nam. Sản phẩm chính của công ty là đũa thay đầu
-                GreenChop. Đây chính là cái tên đã giúp các nhà hàng, khách sạn,
-                quán ăn... đã dần lấy lại được sự tin tưởng của thực khách giữa
-                mùa Covid. Đũa thay đầu là ý tưởng đột phá và tinh tế được xây
-                dựng từ việc thấu hiểu hành vi ăn uống của khách hàng của đội
-                ngũ GreenChop. Sản phẩm giúp người dùng đảm bảo tối đa sự riêng
-                tư, giãn cách và an toàn trong bữa ăn, từ đó, xoa dịu tâm lý
-                ngại “ăn ngoài” của khách hàng.
+                ăn,... tại Việt Nam.
               </p>
-            </div>
-            <div className={style.articleThumnail}>
+
               <img
                 src={thumbnail01}
-                style={{ width: "100%", borderRadius: "5px" }}
                 alt="about-img"
+                className={style.articleThumnail}
               />
-            </div>
-          </article>
+            </article>
 
-          <div className={style.pageContainer}>
-            {/* article-detail */}
-            <article className={style.pageArticle}>
-              <div className={style.articleContent}>
-                <p className={style.articleDesc}></p>
-              </div>
-              <div className={style.articleThumnail}>
-                <img src="" width={500} height={300} alt="about-img" />
-              </div>
+            {/* article */}
+            <article className={style.article}>
+              <p className={style.articleDesc}>
+                Sản phẩm chính của công ty là đũa thay đầu GreenChop. Đây chính
+                là cái tên đã giúp các nhà hàng, khách sạn, quán ăn... đã dần
+                lấy lại được sự tin tưởng của thực khách giữa mùa Covid. Đũa
+                thay đầu là ý tưởng đột phá và tinh tế được xây dựng từ việc
+                thấu hiểu hành vi ăn uống của khách hàng của đội ngũ GreenChop.
+                Sản phẩm giúp người dùng đảm bảo tối đa sự riêng tư, giãn cách
+                và an toàn trong bữa ăn, từ đó, xoa dịu tâm lý ngại “ăn ngoài”
+                của khách hàng.
+              </p>
+
+              <img
+                src={thumbnail02}
+                alt="about-img"
+                className={style.articleThumbnail}
+              />
+            </article>
+
+            {/* article */}
+            <article className={style.article}>
+              <p className={style.articleContent}>
+                Không chỉ là các chuỗi nhà hàng, khách sạn,..., nhiều người tiêu
+                dùng cũng đã tin tưởng và chọn lựa GreenChop như một người bạn
+                đồng hành không thể thiếu cùng gia đình của mình.
+              </p>
+
+              <img
+                src={thumbnail03}
+                alt="about-img"
+                className={style.articleThumbnail}
+              />
             </article>
           </div>
         </section>
 
-        <section className={style.pageQuotes}>
-          <div className={style.quoteBackground}>
-            <img src={aboutImg04} alt="about-img" />
-            <div className={style.backgroundOverlay}></div>
+        {/* quotes-section */}
+        <section className={style.quotes}>
+          <div className={style.quoteBg}>
+            <img src={thumbnail04} alt="about-img" className={style.bgImage} />
+            <div className={style.bgOverlay}></div>
           </div>
 
           <div className={style.quoteContent}>
-            <h2 className={style.quotesTitle}>Sản phẩm chính của GreenChop</h2>
-            <p className={style.quotesDesc}>
+            <h2 className={style.title}>Sản phẩm chính của GreenChop</h2>
+            <p className={style.desc}>
               GreenChop đã nghiên cứu tâm lý ăn uống của người Việt để cho ra
               được sản phẩm với cấu trúc thông minh và thiết kế tinh tế. Đũa
               xanh GreenChop cho phép người dùng dễ dàng tháo lắp đầu và thân
@@ -84,26 +102,42 @@ const AboutPage = () => {
               bảo vệ sức khỏe của người dùng với đầu đũa bằng gỗ tre được khử
               khuẩn 100%.
             </p>
-            <img
-              className={style.quoteIconOpen}
-              src={quotes_open}
-              alt="quotes-ic"
-            />
-            <img
-              className={style.quoteIconClose}
-              src={quotes_close}
-              alt="quotes-ic"
-            />
+
+            <img className={style.openIc} src={quotesOpen} alt="quotes-ic" />
+
+            <img className={style.closeIc} src={quoteClose} alt="quotes-ic" />
           </div>
         </section>
 
-        <section className={style.pageDestiny}>
+        {/* goal-section */}
+        <section className={style.goal}>
           <div className={"container"}>
-            <div className={style.wrapper}>
-              <img src="" width={500} height={300} alt="about-img" />
-              <div className={style.pageContent}>
-                <h2 className={style.contentTitle}>Sứ mệnh của GreenChop</h2>
-                <p className={style.contentDesc}>
+            <div className={style.layout}>
+              <div className={style.goalThumbnail}>
+                <img
+                  src={thumbnail05}
+                  width={500}
+                  height={300}
+                  alt="about-img"
+                  className={style.image}
+                />
+
+                <Esclipe
+                  position={{ top: "40px", left: "-150px" }}
+                  size={{ width: "400px", height: "400px" }}
+                  background={"green-20"}
+                />
+
+                <Esclipe
+                  position={{ bottom: "-40px", right: "150px" }}
+                  size={{ width: "200px", height: "200px" }}
+                  background={"orange-20"}
+                />
+              </div>
+
+              <div className={style.goalContent}>
+                <h2 className={style.title}>Sứ mệnh của GreenChop</h2>
+                <p className={style.desc}>
                   Đội ngũ GreenChop gồm những người trẻ năng động và luôn mong
                   muốn cống hiến cho sức khỏe cộng đồng Việt Nam. Trên tiêu chí
                   đó, GreenChop đã và đang tiếp tục góp sức trong công cuộc
@@ -125,3 +159,7 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+/*
+
+*/
