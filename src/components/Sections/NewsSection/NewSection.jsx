@@ -1,7 +1,8 @@
 import NewCard from "./NewCard";
-import NextButton from "../../NextButton/NextButton";
+import Button from "../../Button/Button";
 import { news } from "./new-data.json";
 import style from "./NewSection.module.scss";
+import nextIc from "/icons/next-ic.svg";
 
 const NewSection = () => {
   return (
@@ -33,9 +34,12 @@ const NewSection = () => {
             />
           ))}
         </div>
-      </div>
 
-      <NextButton />
+        <button className={style.btn}>
+          Xem Thêm
+          <img src={nextIc} alt="icon" />
+        </button>
+      </div>
     </section>
   );
 };

@@ -2,7 +2,9 @@ import ProductCard from "./ProductCard";
 import { products } from "./product-data.json";
 import style from "./ProductSection.module.scss";
 
-const ProductSection = () => {
+const ProductSection = ({ limit }) => {
+  const displayCard = limit ? products.slice(0, limit) : products;
+
   return (
     <>
       <section className={style.product}>
@@ -10,7 +12,7 @@ const ProductSection = () => {
           <h2 className={style.header}>Sản phẩm</h2>
 
           <div className={style.productList}>
-            {products.map((product) => (
+            {displayCard.map((product) => (
               <ProductCard
                 key={product.id}
                 id={product.id}

@@ -1,3 +1,4 @@
+import Banner from "../../components/Banner/Banner";
 import Achivement from "../../components/Sections/AchevSection/AchevSection";
 import NewsSection from "../../components/Sections/NewsSection/NewSection";
 import ProductSection from "../../components/Sections/ProductSection/ProductSection";
@@ -7,7 +8,7 @@ import CompSection from "../../components/Sections/CompSection/CompSection";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import style from "./HomePage.module.scss";
-import banner from "/images/home-page/main-banner.png";
+
 import thumbnail from "/images/home-page/supp-thumbnail.png";
 
 const HomePage = () => {
@@ -35,12 +36,11 @@ const HomePage = () => {
               </div>
 
               {/* banner-thumbnail*/}
-              <div className={style.thumbnail}>
-                <img src={banner} alt="main-banner" className={style.image} />
-                <div className={style.cover}>
-                  <h1 className={style.coverText}>Green Chop</h1>
-                </div>
-              </div>
+              <Banner
+                image={{ top: "0" }}
+                coverBox={{ width: "100vw", top: "5px", left: "200px" }}
+                coverText={{ fontSize: "10rem", top: "200px", left: "100px" }}
+              />
             </div>
           </div>
         </section>
@@ -49,7 +49,7 @@ const HomePage = () => {
         <Achivement />
 
         {/* product-section */}
-        <ProductSection />
+        <ProductSection limit={6} />
 
         {/* news-section */}
         <NewsSection />

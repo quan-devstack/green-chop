@@ -1,7 +1,8 @@
-// base
-@use "./base/reset";
-@use "./base/typography";
+@use "./reset";
+@use "./variables";
 
-// utils
-@use "./utils/layout";
-@use "./utils/variables";
+// className
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}

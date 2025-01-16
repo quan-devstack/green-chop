@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Esclipe from "../../Esclipe/Esclipe";
 import style from "./ProductSection.module.scss";
@@ -11,7 +12,14 @@ const ProductCard = ({
   thumbnail,
   esclipe_bg,
 }) => {
+  const detailRef = useRef(null);
   const nav = useNavigate();
+
+  const navigateToDetail = () => {
+    nav(`/product/${id}`, {
+      state: { title_a, title_b, quantity, price, thumbnail },
+    });
+  };
 
   return (
     <div className={style.productCard}>
@@ -36,10 +44,7 @@ const ProductCard = ({
         <span className={style.price}>Giá: {price} vnđ</span>
       </div>
 
-      <button
-        className={style.cardButton}
-        onClick={() => nav(`/product/${id}`)}
-      >
+      <button className={style.cardButton} onClick={() => navigateToDetail()}>
         Xem chi tiết
       </button>
     </div>

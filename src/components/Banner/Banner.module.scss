@@ -1,0 +1,27 @@
+.thumbnail {
+  grid-column: span 6;
+  position: relative;
+
+  .image {
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover {
+    position: absolute;
+    border-radius: 17px;
+    background-color: var(--green-20);
+    height: 100%;
+
+    .coverText {
+      position: relative;
+      width: 675px;
+      text-transform: uppercase;
+      font-weight: 800;
+      line-height: 100%;
+      transform: rotate(90deg);
+      color: var(--green-100);
+      opacity: 0.2;
+    }
+  }
+}
