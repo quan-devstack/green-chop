@@ -1,14 +1,10 @@
-import styles from "./Button.module.scss";
+import "./Button.scss";
 
-const NextButton = ({ text, custom, onClick }) => {
-  const inline = {
-    width: custom.width,
-    margin: custom.margin,
-  };
-
+const NextButton = ({ text, className, icon, onClick }) => {
   return (
-    <button style={inline} className={styles.btn2} onClick={onClick}>
+    <button className={`btn ${className}`} onClick={onClick}>
       {text}
+      {icon && <img src={icon} alt="icon" className="btn-ic" />}
     </button>
   );
 };

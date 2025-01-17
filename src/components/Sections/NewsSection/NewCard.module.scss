@@ -1,0 +1,46 @@
+.newsCard {
+  margin: 20px auto;
+
+  .cardImage {
+    .image {
+      width: 385px;
+      height: 273px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .caption {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .captionText {
+        color: var(--green-80);
+      }
+
+      .captionDate {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+
+  .cardContent {
+    width: 360px;
+
+    .cardTitle {
+      margin: 10px 0;
+      font-weight: 600;
+
+      &:hover {
+        cursor: pointer;
+        color: var(--green-80);
+      }
+    }
+
+    .cardDesc {
+      line-height: 1.5;
+    }
+  }
+}

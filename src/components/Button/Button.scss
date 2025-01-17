@@ -1,0 +1,53 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--green-80);
+  border-radius: 7px;
+  padding: 15px;
+  font-weight: 600;
+  color: var(--white-txt);
+  background-color: var(--green-80);
+  cursor: pointer;
+
+  .btn-ic {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    border: 1px solid var(--orange-60);
+    background-color: var(--orange-60);
+  }
+
+  &:hover .btn-ic {
+    filter: invert(1) brightness(2);
+  }
+}
+
+.detail-btn {
+  margin: 20px auto;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 13px;
+  width: 150px;
+  color: #000;
+  background-color: #fff;
+
+  &:hover {
+    border: 1px solid var(--green-80);
+    color: #fff;
+    background-color: var(--green-80);
+  }
+}
+
+.send-btn {
+  width: 100px;
+}
+
+.confirm-btn {
+  margin: 30px auto;
+}

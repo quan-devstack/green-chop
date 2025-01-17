@@ -1,10 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import NewCard from "./NewCard";
 import Button from "../../Button/Button";
 import { news } from "./new-data.json";
 import style from "./NewSection.module.scss";
 import nextIc from "/icons/next-ic.svg";
 
-const NewSection = () => {
+const NewSection = ({ limit }) => {
+  const nav = useNavigate();
+  const displayCard = limit ? news.slice(0, limit) : news;
+
   return (
     <section className={style.news}>
       <div className={"container"}>
@@ -23,7 +27,7 @@ const NewSection = () => {
         </div>
 
         <div className={style.newsList}>
-          {news.map((item) => (
+          {displayCard.map((item) => (
             <NewCard
               key={item.id}
               thumnail={item.thumnail}
@@ -31,14 +35,19 @@ const NewSection = () => {
               createdAt={item.createdAt}
               title={item.title}
               desc={item.desc}
+              grid={{ gridColumn: "span 4" }}
             />
           ))}
         </div>
 
-        <button className={style.btn}>
-          Xem Thêm
-          <img src={nextIc} alt="icon" />
-        </button>
+        <div className={style.btnAction}>
+          <Button
+            text={"Xem thêm"}
+            className={"next-btn"}
+            icon={nextIc}
+            onClick={() => nav("/news")}
+          />
+        </div>
       </div>
     </section>
   );

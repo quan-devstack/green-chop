@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import ProductSection from "../../components/Sections/ProductSection/ProductSection";
 import FormPopUp from "../../components/PopUp/FormPopUp/FormPopUp";
+import Button from "../../components/Button/Button";
 import style from "./ProductDetail.module.scss";
 import specIc01 from "/icons/spec-ic-01.svg";
 import specIc02 from "/icons/spec-ic-02.svg";
@@ -14,8 +15,9 @@ import specIc05 from "/icons/spec-ic-05.svg";
 const ProductDetail = () => {
   const location = useLocation();
   const { productId } = useParams();
-  const { title_a, title_b, price, quantity, thumbnail } = location.state || {};
   const detailElementRef = useRef(null);
+
+  const { title_a, title_b, price, quantity, thumbnail } = location.state || {};
 
   const [init, setInit] = useState(1);
   const [changeContent, setChangeContent] = useState("desc");
@@ -97,12 +99,10 @@ const ProductDetail = () => {
                     <span className={style.counterNUmber}>{init}</span>
                     <button className={style.counterUp}>+</button>
                   </div>
-                  <button
-                    className={style.cartBtn}
+                  <Button
+                    text={"Thêm vào giỏ hàng"}
                     onClick={() => setOpenPopUp(true)}
-                  >
-                    Mua Hàng
-                  </button>
+                  />
                 </div>
                 <div className={style.category}>
                   <div className={style.categoryBrand}>

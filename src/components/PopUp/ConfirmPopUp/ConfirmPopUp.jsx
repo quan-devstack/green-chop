@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../../Button/Button";
 import style from "./ConfirmPopUp.module.scss";
-import confirm from "/public/images/confirm.png";
+import confirm from "/images/confirm.png";
 
 const ConfirmPopUp = ({ setOpenPopUp, title }) => {
   const nav = useNavigate();
@@ -16,9 +16,10 @@ const ConfirmPopUp = ({ setOpenPopUp, title }) => {
           Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
           suscipit lobortis nisl ut aliquip ex ea commodo consequa
         </p>
+
         <Button
           text={"Quay về trang chủ"}
-          custom={{ width: "200px", margin: "10px auto" }}
+          className={"confirm-btn"}
           onClick={() => nav("/")}
         />
       </div>

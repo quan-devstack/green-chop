@@ -73,10 +73,7 @@ const FormPopUp = ({ setOpenPopUp }) => {
                 </div>
 
                 <div className={style.formField}>
-                  <Button
-                    text={"Gửi"}
-                    custom={{ width: "100px", margin: "0" }}
-                  />
+                  <Button text={"Gửi"} className={"send-btn"} />
                 </div>
               </div>
             </form>

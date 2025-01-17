@@ -76,7 +76,9 @@ const Header = () => {
 
             {/* nav-icon */}
             <div className={style.navIcon}>
-              <img src={cartIc} alt="cart-ic" />
+              <NavLink to={"/product/cart"}>
+                <img src={cartIc} alt="cart-ic" />
+              </NavLink>
             </div>
 
             {/* nav-icon */}

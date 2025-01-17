@@ -64,20 +64,20 @@
         }
       }
 
-      .cardButton {
-        display: block;
-        margin: 20px auto;
-        border: none;
-        border-radius: 5px;
-        padding: 15px;
-        font-weight: 600;
-        color: var(--gray-10);
-        background-color: var(--green-80);
-        cursor: pointer;
-        &:hover {
-          background-color: var(--orange-60);
-        }
-      }
+      // .cardButton {
+      //   display: block;
+      //   margin: 20px auto;
+      //   border: none;
+      //   border-radius: 5px;
+      //   padding: 15px;
+      //   font-weight: 600;
+      //   color: var(--gray-10);
+      //   background-color: var(--green-80);
+      //   cursor: pointer;
+      //   &:hover {
+      //     background-color: var(--orange-60);
+      //   }
+      // }
     }
   }
 }

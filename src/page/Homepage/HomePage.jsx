@@ -52,7 +52,7 @@ const HomePage = () => {
         <ProductSection limit={6} />
 
         {/* news-section */}
-        <NewsSection />
+        <NewsSection limit={3} />
 
         {/* component-section */}
         <CompSection />

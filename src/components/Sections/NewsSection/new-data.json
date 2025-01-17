@@ -25,6 +25,69 @@
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "4",
+      "thumnail": "/images/news-page/thumbnail-01.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "5",
+      "thumnail": "/images/news-page/thumbnail-02.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "6",
+      "thumnail": "/images/news-page/thumbnail-03.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "7",
+      "thumnail": "/images/news-page/thumbnail-04.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "8",
+      "thumnail": "/images/news-page/thumbnail-05.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "9",
+      "thumnail": "/images/news-page/thumbnail-01.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
+    },
+
+    {
+      "id": "10",
+      "thumnail": "/images/news-page/thumbnail-02.png",
+      "thumnail_caption": "Lorem ipsum",
+      "createdAt": "28-10-2021",
+      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
     }
   ]
 }
