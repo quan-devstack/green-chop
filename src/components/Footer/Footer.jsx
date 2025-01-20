@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className={"container"}>
-        <div className={style.containerInner}>
+        <div className={style.layout}>
           <div className={style.footerColumn}>
             <div className={style.columnContent}>
               <img src={logo} alt="logo" />

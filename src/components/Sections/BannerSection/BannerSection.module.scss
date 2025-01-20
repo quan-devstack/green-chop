@@ -1,0 +1,69 @@
+.bannerSection {
+  position: relative;
+  overflow: hidden;
+
+  .layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+
+    .bannerContent {
+      grid-column: span 6;
+      margin-top: 150px;
+
+      .slogan {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+
+      .title {
+        margin-top: 15px;
+        width: 450px;
+        font-size: 2.7rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .description {
+        margin-top: 20px;
+        font-weight: 400;
+      }
+    }
+
+    .bannerThumbnail {
+      grid-column: span 6;
+      position: relative;
+
+      .image {
+        position: relative;
+        z-index: 2;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 5px;
+        left: 200px;
+        border-radius: 17px;
+        background-color: var(--green-20);
+        width: 100vw;
+        height: 100%;
+        z-index: 1;
+
+        .overlayTxt {
+          display: block;
+          position: relative;
+          top: 200px;
+          left: 100px;
+          width: 675px;
+          text-transform: uppercase;
+          font-weight: 800;
+          font-size: 10rem;
+          line-height: 100%;
+          transform: rotate(90deg);
+          color: var(--green-100);
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+}

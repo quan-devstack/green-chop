@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import NewCard from "./NewCard";
 import Button from "../../Button/Button";
-import { news } from "./new-data.json";
+import { news } from "../../../data/news.json";
 import style from "./NewSection.module.scss";
 import nextIc from "/icons/next-ic.svg";
 
@@ -10,26 +10,26 @@ const NewSection = ({ limit }) => {
   const displayCard = limit ? news.slice(0, limit) : news;
 
   return (
-    <section className={style.news}>
+    <section className={style.newsSection}>
       <div className={"container"}>
-        <div className={style.header}>
-          <h2 className={style.title}>Tin tức</h2>
-          <p className={style.subtitle}>
-            <span>
-              L nulla facilisis at vero eros et accumsan et iusto odio dignissim
-              qui blandit praesent luptatum zzril
-            </span>
-            <span>
-              delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum
-              dolor sit amet, cons ectetuer adipiscing
-            </span>
-          </p>
-        </div>
+        <h2 className={style.title}>Tin tức</h2>
+
+        <p className={style.description}>
+          <span>
+            L nulla facilisis at vero eros et accumsan et iusto odio dignissim
+            qui blandit praesent luptatum zzril
+          </span>
+          <span>
+            delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum
+            dolor sit amet, cons ectetuer adipiscing
+          </span>
+        </p>
 
         <div className={style.newsList}>
           {displayCard.map((item) => (
             <NewCard
               key={item.id}
+              id={item.id}
               thumnail={item.thumnail}
               caption={item.thumnail_caption}
               createdAt={item.createdAt}
@@ -40,7 +40,7 @@ const NewSection = ({ limit }) => {
           ))}
         </div>
 
-        <div className={style.btnAction}>
+        <div className={style.button}>
           <Button
             text={"Xem thêm"}
             className={"next-btn"}

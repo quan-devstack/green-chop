@@ -1,12 +1,12 @@
 import QualityCard from "./QualityCard";
-import { qualities } from "./quality-data.json";
+import { qualities } from "../../../data/qualities.json";
 import style from "./QualitySection.module.scss";
 
 const QualitySection = () => {
   return (
-    <section className={style.quality}>
+    <section className={style.qualitySection}>
       <div className="container">
-        <div className={style.layout}>
+        <div className={style.qualityList}>
           {qualities.map((item) => (
             <QualityCard
               key={item.id}

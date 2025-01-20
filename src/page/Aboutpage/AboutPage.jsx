@@ -1,9 +1,9 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Esclipe from "../../components/Esclipe/Esclipe";
-import Achivement from "../../components/Sections/AchevSection/AchevSection";
-import style from "./AboutPage.module.scss";
+import AchievsSection from "../../components/Sections/AchievsSection/AchievsSection";
 
+import style from "./AboutPage.module.scss";
 import thumbnail01 from "/images/about-page/thumbnail-01.png";
 import thumbnail02 from "/images/about-page/thumbnail-02.png";
 import thumbnail03 from "/images/about-page/thumbnail-03.png";
@@ -17,18 +17,18 @@ const AboutPage = () => {
     <>
       <Header />
       <main className={style.aboutPage}>
-        {/* header-section */}
-        <section className={style.pageHeader}>
+        {/* name-section */}
+        <section className={style.nameSection}>
           <div className={"container"}>
             <h1 className={style.title}>Về GreenChop</h1>
           </div>
         </section>
 
         {/* achiement-section */}
-        <Achivement />
+        <AchievsSection />
 
         {/* details-section */}
-        <section className={style.details}>
+        <section className={style.detailSection}>
           <div className={"container"}>
             {/* article */}
             <article className={style.article}>
@@ -84,15 +84,15 @@ const AboutPage = () => {
         </section>
 
         {/* quotes-section */}
-        <section className={style.quotes}>
-          <div className={style.quoteBg}>
-            <img src={thumbnail04} alt="about-img" className={style.bgImage} />
-            <div className={style.bgOverlay}></div>
+        <section className={style.quoteSection}>
+          <div className={style.quoteBackground}>
+            <img src={thumbnail04} alt="about-img" className={style.image} />
+            <div className={style.overlay}></div>
           </div>
 
           <div className={style.quoteContent}>
             <h2 className={style.title}>Sản phẩm chính của GreenChop</h2>
-            <p className={style.desc}>
+            <p className={style.description}>
               GreenChop đã nghiên cứu tâm lý ăn uống của người Việt để cho ra
               được sản phẩm với cấu trúc thông minh và thiết kế tinh tế. Đũa
               xanh GreenChop cho phép người dùng dễ dàng tháo lắp đầu và thân
@@ -104,13 +104,12 @@ const AboutPage = () => {
             </p>
 
             <img className={style.openIc} src={quotesOpen} alt="quotes-ic" />
-
             <img className={style.closeIc} src={quoteClose} alt="quotes-ic" />
           </div>
         </section>
 
         {/* goal-section */}
-        <section className={style.goal}>
+        <section className={style.goalSection}>
           <div className={"container"}>
             <div className={style.layout}>
               <div className={style.goalThumbnail}>
@@ -122,22 +121,18 @@ const AboutPage = () => {
                   className={style.image}
                 />
 
-                <Esclipe
-                  position={{ top: "40px", left: "-150px" }}
-                  size={{ width: "400px", height: "400px" }}
-                  background={"green-20"}
-                />
+                <div className={style.esclipe}>
+                  <Esclipe className={"big-size"} background={"green-20"} />
+                </div>
 
-                <Esclipe
-                  position={{ bottom: "-40px", right: "150px" }}
-                  size={{ width: "200px", height: "200px" }}
-                  background={"orange-20"}
-                />
+                <div className={style.esclipe}>
+                  <Esclipe className={"medium-size"} background={"orange-20"} />
+                </div>
               </div>
 
               <div className={style.goalContent}>
                 <h2 className={style.title}>Sứ mệnh của GreenChop</h2>
-                <p className={style.desc}>
+                <p className={style.description}>
                   Đội ngũ GreenChop gồm những người trẻ năng động và luôn mong
                   muốn cống hiến cho sức khỏe cộng đồng Việt Nam. Trên tiêu chí
                   đó, GreenChop đã và đang tiếp tục góp sức trong công cuộc

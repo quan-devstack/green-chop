@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Esclipe from "../../Esclipe/Esclipe";
 import Button from "../../Button/Button";
-import style from "./ProductSection.module.scss";
+import style from "./ProductCard.module.scss";
 
 const ProductCard = ({
   id,
@@ -24,11 +24,9 @@ const ProductCard = ({
     <div className={style.productCard}>
       <div className={style.cardImage}>
         <img src={thumbnail} alt="product-img" className={style.image} />
-        <Esclipe
-          size={{ width: "200px", height: "200px" }}
-          position={{ top: "-50px", left: "50px" }}
-          background={esclipe_bg}
-        />
+        <div className={style.esclipe}>
+          <Esclipe className={"medium-size"} background={esclipe_bg} />
+        </div>
       </div>
 
       <p className={style.cardTitle}>

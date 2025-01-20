@@ -1,18 +1,7 @@
-import style from "./Esclipe.module.scss";
+import "./Esclipe.scss";
 
-const Esclipe = ({ background, size, position }) => {
-  const styles = {
-    width: size?.width || "100px",
-    height: size?.height || "100px",
-    ...position,
-  };
-
-  return (
-    <div
-      style={styles}
-      className={`${style.esclipe} ${style[background]}`}
-    ></div>
-  );
+const Esclipe = ({ className, background }) => {
+  return <div className={`esclipe ${background} ${className}`}></div>;
 };
 
 export default Esclipe;

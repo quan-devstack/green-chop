@@ -1,4 +1,4 @@
-import style from "./AchevSection.module.scss";
+import style from "./AchievsCard.module.scss";
 
 const AchevCard = ({ number, title, icon }) => {
   return (

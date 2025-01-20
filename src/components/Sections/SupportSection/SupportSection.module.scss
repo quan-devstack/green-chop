@@ -1,61 +1,75 @@
-.form {
-  grid-column: span 6;
+.supportSection {
+  margin-top: 150px;
 
-  .formContent {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
+  .layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
 
-  .formField {
-    margin-top: 20px;
+    .supportThumbnail {
+      grid-column: span 6;
+    }
 
-    .formInput {
-      border: 1px solid var(--gray-50);
-      border-radius: 7px;
-      padding: 15px;
-      width: 100%;
-      outline: none;
+    .supportForm {
+      grid-column: span 6;
 
-      &::placeholder {
-        font-size: 1rem;
-        color: var(--gray-50);
+      .formContent {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .formField {
+        margin-top: 20px;
+
+        .formInput {
+          border: 1px solid var(--gray-50);
+          border-radius: 7px;
+          padding: 15px;
+          width: 100%;
+          outline: none;
+
+          &::placeholder {
+            font-size: 1rem;
+            color: var(--gray-50);
+          }
+        }
+
+        .formText {
+          border: 1px solid var(--gray-50);
+          border-radius: 7px;
+          padding: 10px;
+          width: 100%;
+          font-size: 1rem;
+          font-family: "Roboto", serif;
+          color: var(--gray-50);
+          outline: none;
+        }
+
+        .formBtn {
+          display: block;
+          margin-left: auto;
+          border: 1px solid var(--green-80);
+          border-radius: 5px;
+          padding: 10px;
+          width: 100px;
+          font-weight: 600;
+          color: var(--white-txt);
+          background-color: var(--green-80);
+          cursor: pointer;
+
+          &:hover {
+            border: 1px solid var(--orange-80);
+            background-color: var(--orange-60);
+          }
+        }
+      }
+
+      .formField:has(input:nth-of-type(2)) {
+        display: flex;
+        gap: 20px;
       }
     }
-
-    .formText {
-      border: 1px solid var(--gray-50);
-      border-radius: 7px;
-      padding: 10px;
-      width: 100%;
-      font-size: 1rem;
-      font-family: "Roboto", serif;
-      color: var(--gray-50);
-      outline: none;
-    }
-
-    .formBtn {
-      display: block;
-      margin-left: auto;
-      border: 1px solid var(--green-80);
-      border-radius: 5px;
-      padding: 10px;
-      width: 100px;
-      font-weight: 600;
-      color: var(--white-txt);
-      background-color: var(--green-80);
-      cursor: pointer;
-
-      &:hover {
-        border: 1px solid var(--orange-80);
-        background-color: var(--orange-60);
-      }
-    }
-  }
-
-  .formField:has(input:nth-of-type(2)) {
-    display: flex;
-    gap: 20px;
   }
 }

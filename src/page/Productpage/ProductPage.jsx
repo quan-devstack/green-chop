@@ -15,7 +15,8 @@ const ProductPage = () => {
     <>
       <Header />
       <main className={style.productPage}>
-        <section className={style.pageHeader}>
+        {/* name-section */}
+        <section className={style.nameSection}>
           <div className={"container"}>
             <h1 className={style.title}>Sản phẩm</h1>
           </div>
@@ -25,7 +26,7 @@ const ProductPage = () => {
         <ProductSection />
 
         {/* intro-section */}
-        <section className={style.intro}>
+        <section className={style.introSection}>
           <div className="container">
             <div className={style.layout}>
               <div className={style.unknownShape}>
@@ -67,7 +68,7 @@ const ProductPage = () => {
                   <span>Đũa thay đầu GreenChop - </span>
                   <span>thẻ xanh an toàn toàn trong từng bữa ăn</span>
                 </div>
-                <p className={style.desc}>
+                <p className={style.description}>
                   GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường
                   hiện tại. Sản phẩm cho phép người dùng tháo lắp và thay mới
                   đầu đũa 100% trong mỗi bữa ăn. Nhờ đó, GreenChop giúp ngăn
@@ -86,19 +87,18 @@ const ProductPage = () => {
         {/* component-section */}
         <CompSection />
 
-        {/* guideline-section */}
-        <section className={style.guideline}>
+        {/* guide-section */}
+        <section className={style.guideSection}>
           <div className="container">
-            <div className={style.header}>
-              <h2 className={style.title}>
-                <span>Hướng dẫn thao tác</span>
-                <span>sử dụng đũa GreenChop</span>
-              </h2>
-              <p className={style.subtitle}>
-                Bằng cách này, người dùng sẽ có một đôi đũa với đầu đũa mới
-                100%, không qua tay bất kỳ ai trước đó
-              </p>
-            </div>
+            <h2 className={style.title}>
+              <span>Hướng dẫn thao tác</span>
+              <span>sử dụng đũa GreenChop</span>
+            </h2>
+
+            <p className={style.description}>
+              Bằng cách này, người dùng sẽ có một đôi đũa với đầu đũa mới 100%,
+              không qua tay bất kỳ ai trước đó
+            </p>
 
             <div className={style.layout}>
               {/* guide-step */}
@@ -165,110 +165,109 @@ const ProductPage = () => {
                 />
               </div>
             </div>
+          </div>
+        </section>
 
-            {/* guide-more-info */}
-            <div className={style.guideMoreInfo}>
-              <div className={style.guideBox}>
-                <p className={style.boxContent}>
+        {/* more-info-section */}
+        <section className={style.moreInfoSection}>
+          <div className="container">
+            <div className={style.layout}>
+              <div className={style.moreInfoContent}>
+                <p className={style.description}>
                   Thao tác thay đầu đũa mỗi bữa ăn giúp người dùng sử dụng một
                   đôi đũa mới trong mọi bữa ăn và không có sự xâm nhập của
                   virus/vi khuẩn gây bệnh trước đó. Nhờ vậy, GreenChop đảm bảo
                   an toàn cho thực khách và đẩy lùi nguy cơ lây lan dịch bệnh
                   trong ăn uống hàng ngày.
                 </p>
-                <span className={style.boxBorder}></span>
+                <span className={style.border}></span>
               </div>
 
               <img
                 src={thumnail02}
                 alt="thumbnail"
-                className={style.guideThumbnail}
+                className={style.moreInfoThumbnail}
               />
             </div>
           </div>
         </section>
 
-        {/* protection-section */}
-        <section className={style.protection}>
-          <div className={style.header}>
-            <span className={style.title}>Bảo vệ bản thân</span>
-            <span className={style.title}>nguyên tắc 5K cùng Greenchop</span>
-          </div>
+        {/* protect-section */}
+        <section className={style.protectSection}>
+          <h2 className={style.title}>
+            <span>Bảo vệ bản thân</span>
+            <span>nguyên tắc 5K cùng Greenchop</span>
+          </h2>
 
-          <div className={style.body}>
-            <article className={style.protectInfo}>
-              <div className="container">
-                <div className={style.layout}>
-                  <img
-                    src={thumbnail03}
-                    alt="thumbnail"
-                    className={style.guideThumbnail}
-                  />
+          <div className={style.protectContent}>
+            <article className={style.protectArticle}>
+              <div className={style.layout}>
+                <img
+                  src={thumbnail03}
+                  alt="thumbnail"
+                  className={style.protectThumbnail}
+                />
 
-                  <p className={style.guideDesc}>
-                    Kể cả khi đã thực hiện 5K, việc dùng chung dụng cụ ăn uống
-                    với người khác vẫn mang những tiềm tàng khả năng bị lây
-                    bệnh. Lúc này, đầu đũa được thay thế mỗi bữa ăn giúp ngăn
-                    ngừa sự bám víu của Covid 19 cũng như các loại vị
-                    khuẩn/virus gây bệnh khác. Không chỉ có thể, GreenChop là sự
-                    lựa chọn hoàn hảo cho những thực khách có thói quen sử dụng
-                    dụng cụ cá nhân ngay cả tại những nơi công cộng một cách dễ
-                    dàng.
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="114"
-                      height="89"
-                      viewBox="0 0 114 89"
-                      fill="none"
-                      className={style.guideIcon}
-                    >
-                      <path
-                        opacity="0.1"
-                        d="M47.1336 28.4174C47.1336 46.0585 41.3478 62.2438 29.7763 76.9733C22.4589 85.8794 16.5881 89.7331 12.1637 88.5342C8.07957 86.9927 6.03752 84.6805 6.03752 81.5976C6.03752 78.686 7.39889 75.6031 10.1216 72.3489C12.6742 69.0947 14.7162 66.44 16.2477 64.3847C17.7793 62.3294 19.0555 60.1029 20.0766 57.705C22.459 52.9094 23.6501 47.0861 23.6501 40.2352C19.5661 41.4341 15.482 40.9203 11.3979 38.6937C3.91041 34.4119 0.166667 28.9312 0.166668 22.2515C0.166669 15.7432 2.20871 10.4337 6.29279 6.32314C10.2067 2.38386 15.6522 0.414228 22.6291 0.41423C29.6061 0.414231 35.477 3.06896 40.2417 8.37842C44.8363 13.8592 47.1336 20.5388 47.1336 28.4174ZM113.5 28.4174C113.5 46.7436 107.799 62.9289 96.3979 76.9733C87.7192 87.4209 80.487 90.5895 74.7012 86.4789C73.51 85.6225 72.9144 84.2524 72.9144 82.3684C72.9144 78.9429 74.1907 75.6031 76.7432 72.3489C79.1256 69.0947 81.0826 66.44 82.6141 64.3847C84.1456 62.3294 85.4219 60.1029 86.4429 57.7051C88.8253 52.9094 90.0165 47.0861 90.0165 40.2352C85.9324 41.4341 81.9334 40.9203 78.0195 38.6937C70.7022 34.4119 67.0435 28.9312 67.0435 22.2515C67.0435 15.7432 69.0005 10.4337 72.9144 6.32315C76.8283 2.38387 82.2738 0.41424 89.2508 0.414241C96.2277 0.414243 102.014 3.06898 106.608 8.37843C111.203 13.8592 113.5 20.5388 113.5 28.4174Z"
-                        fill="#2C2C2C"
-                      />
-                    </svg>
-                  </p>
-                </div>
-                <div className={style.background}></div>
+                <p className={style.protectDesc}>
+                  Kể cả khi đã thực hiện 5K, việc dùng chung dụng cụ ăn uống với
+                  người khác vẫn mang những tiềm tàng khả năng bị lây bệnh. Lúc
+                  này, đầu đũa được thay thế mỗi bữa ăn giúp ngăn ngừa sự bám
+                  víu của Covid 19 cũng như các loại vị khuẩn/virus gây bệnh
+                  khác. Không chỉ có thể, GreenChop là sự lựa chọn hoàn hảo cho
+                  những thực khách có thói quen sử dụng dụng cụ cá nhân ngay cả
+                  tại những nơi công cộng một cách dễ dàng.
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="114"
+                    height="89"
+                    viewBox="0 0 114 89"
+                    fill="none"
+                    className={style.icon}
+                  >
+                    <path
+                      opacity="0.1"
+                      d="M47.1336 28.4174C47.1336 46.0585 41.3478 62.2438 29.7763 76.9733C22.4589 85.8794 16.5881 89.7331 12.1637 88.5342C8.07957 86.9927 6.03752 84.6805 6.03752 81.5976C6.03752 78.686 7.39889 75.6031 10.1216 72.3489C12.6742 69.0947 14.7162 66.44 16.2477 64.3847C17.7793 62.3294 19.0555 60.1029 20.0766 57.705C22.459 52.9094 23.6501 47.0861 23.6501 40.2352C19.5661 41.4341 15.482 40.9203 11.3979 38.6937C3.91041 34.4119 0.166667 28.9312 0.166668 22.2515C0.166669 15.7432 2.20871 10.4337 6.29279 6.32314C10.2067 2.38386 15.6522 0.414228 22.6291 0.41423C29.6061 0.414231 35.477 3.06896 40.2417 8.37842C44.8363 13.8592 47.1336 20.5388 47.1336 28.4174ZM113.5 28.4174C113.5 46.7436 107.799 62.9289 96.3979 76.9733C87.7192 87.4209 80.487 90.5895 74.7012 86.4789C73.51 85.6225 72.9144 84.2524 72.9144 82.3684C72.9144 78.9429 74.1907 75.6031 76.7432 72.3489C79.1256 69.0947 81.0826 66.44 82.6141 64.3847C84.1456 62.3294 85.4219 60.1029 86.4429 57.7051C88.8253 52.9094 90.0165 47.0861 90.0165 40.2352C85.9324 41.4341 81.9334 40.9203 78.0195 38.6937C70.7022 34.4119 67.0435 28.9312 67.0435 22.2515C67.0435 15.7432 69.0005 10.4337 72.9144 6.32315C76.8283 2.38387 82.2738 0.41424 89.2508 0.414241C96.2277 0.414243 102.014 3.06898 106.608 8.37843C111.203 13.8592 113.5 20.5388 113.5 28.4174Z"
+                      fill="#2C2C2C"
+                    />
+                  </svg>
+                </p>
               </div>
+              <div className={style.overlay}></div>
             </article>
 
-            <article className={style.protectInfo}>
-              <div className="container">
-                <div className={style.layout}>
-                  <img
-                    src={thumbnail04}
-                    alt="thumbnail"
-                    className={style.guideThumbnail}
-                  />
+            <article className={style.protectArticle}>
+              <div className={style.layout}>
+                <img
+                  src={thumbnail04}
+                  alt="thumbnail"
+                  className={style.protectThumbnail}
+                />
 
-                  <p className={style.guideDesc}>
-                    Đũa GreenChop hoàn thiện cả về công năng lẫn thẩm mỹ. Đầu
-                    đũa được làm từ 100% chất liệu tự nhiên, màu sắc hài hòa,
-                    kiểu dáng cứng cáp không khác gì đũa ăn truyền thống. Hiện
-                    đại, tối giản là những đặc tính nổi bật nhất khi bàn tới
-                    thiết kế của sản phẩm. Chính vì thế, GreenChop dần trở thành
-                    vật bất ly thân và giúp khẳng định sự đẳng cấp và sự tinh tế
-                    của những thực khách văn minh.
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="112"
-                      height="88"
-                      viewBox="0 0 112 88"
-                      fill="none"
-                      className={style.guideIcon}
-                    >
-                      <path
-                        opacity="0.1"
-                        d="M65.5574 59.6062C65.5574 42.2979 71.2581 26.418 82.6595 11.9664C89.8692 3.22829 95.6537 -0.552644 100.013 0.623646C104.037 2.13602 106.049 4.40458 106.049 7.42933C106.049 10.286 104.708 13.3108 102.025 16.5036C99.5101 19.6964 97.4981 22.301 95.9891 24.3175C94.4801 26.334 93.2225 28.5185 92.2165 30.8711C89.8692 35.5763 88.6955 41.2897 88.6955 48.0113C92.7195 46.835 96.7436 47.3392 100.768 49.5237C108.145 53.7247 111.834 59.1021 111.834 65.6557C111.834 72.0413 109.822 77.2505 105.798 81.2835C101.941 85.1485 96.5759 87.081 89.7015 87.081C82.8271 87.081 77.0426 84.4763 72.3479 79.267C67.8209 73.8897 65.5574 67.3361 65.5574 59.6062ZM0.166992 59.6062C0.166992 41.6258 5.78386 25.7458 17.0176 11.9664C25.5686 1.71592 32.6945 -1.39285 38.3952 2.64014C39.5689 3.48035 40.1557 4.82468 40.1557 6.67314C40.1557 10.034 38.8982 13.3108 36.3832 16.5036C34.0359 19.6964 32.1077 22.301 30.5987 24.3175C29.0897 26.334 27.8322 28.5185 26.8262 30.8711C24.4788 35.5763 23.3051 41.2897 23.3051 48.0113C27.3292 46.835 31.2693 47.3392 35.1257 49.5237C42.3354 53.7247 45.9403 59.1021 45.9403 65.6557C45.9403 72.0413 44.0121 77.2505 40.1557 81.2835C36.2994 85.1485 30.934 87.081 24.0596 87.081C17.1853 87.081 11.4846 84.4763 6.95753 79.267C2.43051 73.8897 0.166992 67.3361 0.166992 59.6062Z"
-                        fill="#2C2C2C"
-                      />
-                    </svg>
-                  </p>
-                </div>
-                <div className={style.background}></div>
+                <p className={style.protectDesc}>
+                  Đũa GreenChop hoàn thiện cả về công năng lẫn thẩm mỹ. Đầu đũa
+                  được làm từ 100% chất liệu tự nhiên, màu sắc hài hòa, kiểu
+                  dáng cứng cáp không khác gì đũa ăn truyền thống. Hiện đại, tối
+                  giản là những đặc tính nổi bật nhất khi bàn tới thiết kế của
+                  sản phẩm. Chính vì thế, GreenChop dần trở thành vật bất ly
+                  thân và giúp khẳng định sự đẳng cấp và sự tinh tế của những
+                  thực khách văn minh.
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="112"
+                    height="88"
+                    viewBox="0 0 112 88"
+                    fill="none"
+                    className={style.icon}
+                  >
+                    <path
+                      opacity="0.1"
+                      d="M65.5574 59.6062C65.5574 42.2979 71.2581 26.418 82.6595 11.9664C89.8692 3.22829 95.6537 -0.552644 100.013 0.623646C104.037 2.13602 106.049 4.40458 106.049 7.42933C106.049 10.286 104.708 13.3108 102.025 16.5036C99.5101 19.6964 97.4981 22.301 95.9891 24.3175C94.4801 26.334 93.2225 28.5185 92.2165 30.8711C89.8692 35.5763 88.6955 41.2897 88.6955 48.0113C92.7195 46.835 96.7436 47.3392 100.768 49.5237C108.145 53.7247 111.834 59.1021 111.834 65.6557C111.834 72.0413 109.822 77.2505 105.798 81.2835C101.941 85.1485 96.5759 87.081 89.7015 87.081C82.8271 87.081 77.0426 84.4763 72.3479 79.267C67.8209 73.8897 65.5574 67.3361 65.5574 59.6062ZM0.166992 59.6062C0.166992 41.6258 5.78386 25.7458 17.0176 11.9664C25.5686 1.71592 32.6945 -1.39285 38.3952 2.64014C39.5689 3.48035 40.1557 4.82468 40.1557 6.67314C40.1557 10.034 38.8982 13.3108 36.3832 16.5036C34.0359 19.6964 32.1077 22.301 30.5987 24.3175C29.0897 26.334 27.8322 28.5185 26.8262 30.8711C24.4788 35.5763 23.3051 41.2897 23.3051 48.0113C27.3292 46.835 31.2693 47.3392 35.1257 49.5237C42.3354 53.7247 45.9403 59.1021 45.9403 65.6557C45.9403 72.0413 44.0121 77.2505 40.1557 81.2835C36.2994 85.1485 30.934 87.081 24.0596 87.081C17.1853 87.081 11.4846 84.4763 6.95753 79.267C2.43051 73.8897 0.166992 67.3361 0.166992 59.6062Z"
+                      fill="#2C2C2C"
+                    />
+                  </svg>
+                </p>
               </div>
+              <div className={style.overlay}></div>
             </article>
           </div>
         </section>

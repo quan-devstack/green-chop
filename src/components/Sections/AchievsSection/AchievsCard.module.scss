@@ -1,0 +1,40 @@
+.achevCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  width: 295px;
+  height: 330px;
+  box-shadow: 0px 0px 72px 0px rgba(54, 54, 54, 0.1);
+  background-color: #fff;
+
+  .cardIcon {
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    background-color: var(--orange-10);
+  }
+
+  .cardNumber {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  .cardDesc {
+    margin: 20px 0;
+    width: 255px;
+    font-size: 1.3rem;
+  }
+}
+
+.card:nth-of-type(2) {
+  align-self: center;
+  position: relative;
+  top: -30px;
+  width: 342px;
+  height: 390px;
+}

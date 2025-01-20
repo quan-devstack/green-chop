@@ -100,7 +100,7 @@ const ProductDetail = () => {
                     <button className={style.counterUp}>+</button>
                   </div>
                   <Button
-                    text={"Thêm vào giỏ hàng"}
+                    text={"Mua hàng"}
                     onClick={() => setOpenPopUp(true)}
                   />
                 </div>

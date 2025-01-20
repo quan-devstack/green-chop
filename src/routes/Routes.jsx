@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "../page/Homepage/HomePage";
 import AboutPage from "../page/Aboutpage/AboutPage";
-import ProductPage from "../page/Productpage/ProductPage";
-import ProductDetail from "../page/Productpage/ProductDetail";
-import ProductCart from "../page/Productpage/ProductCart";
+import ProductPage from "../page/ProductPage/ProductPage";
+import ProductDetail from "../page/ProductPage/ProductDetail";
+import ProductCart from "../page/ProductPage/ProductCart";
 import NewsPage from "../page/Newpage/NewsPage";
 import NewsDetail from "../page/Newpage/NewsDetails";
-import Contact from "../page/Contactpage/Contact";
+import Contact from "../page/ContactPage/Contact";
 
 const MainRoute = () => (
   <Routes>

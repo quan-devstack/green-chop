@@ -1,5 +1,5 @@
 import ProductCard from "./ProductCard";
-import { products } from "./product-data.json";
+import { products } from "../../../data/products.json";
 import style from "./ProductSection.module.scss";
 
 const ProductSection = ({ limit }) => {
@@ -7,9 +7,9 @@ const ProductSection = ({ limit }) => {
 
   return (
     <>
-      <section className={style.product}>
+      <section className={style.productSection}>
         <div className={"container"}>
-          <h2 className={style.header}>Sản phẩm</h2>
+          <h2 className={style.title}>Sản phẩm</h2>
 
           <div className={style.productList}>
             {displayCard.map((product) => (

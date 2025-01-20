@@ -1,6 +1,6 @@
 .aboutPage {
-  // header-section
-  .pageHeader {
+  // name-section
+  .nameSection {
     padding: 30px;
     background-color: var(--green-10);
 
@@ -11,7 +11,7 @@
   }
 
   // detail-section
-  .details {
+  .detailSection {
     .article {
       display: flex;
       justify-content: space-between;
@@ -43,19 +43,19 @@
   }
 
   // quotes-section
-  .quotes {
+  .quoteSection {
     margin-top: 100px;
     position: relative;
 
-    .quoteBg {
-      .bgImage {
+    .quoteBackground {
+      .image {
         display: block;
         margin: 0 auto;
         width: 100%;
         background-color: gray;
       }
 
-      .bgOverlay {
+      .overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -79,7 +79,7 @@
         color: #fff;
       }
 
-      .desc {
+      .description {
         width: 870px;
         margin: 50px auto 0 auto;
       }
@@ -99,7 +99,7 @@
   }
 
   // goal-section
-  .goal {
+  .goalSection {
     margin-top: 100px;
 
     .layout {
@@ -115,6 +115,20 @@
           position: relative;
           z-index: 2;
         }
+
+        .esclipe {
+          position: absolute;
+        }
+
+        .esclipe:nth-of-type(1) {
+          top: 40px;
+          left: -150px;
+        }
+
+        .esclipe:nth-of-type(2) {
+          bottom: -40px;
+          right: 150px;
+        }
       }
 
       .goalContent {
@@ -122,7 +136,7 @@
           margin-bottom: 20px;
         }
 
-        .desc {
+        .description {
           width: 410px;
           line-height: 1.5;
         }

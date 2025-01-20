@@ -1,24 +1,22 @@
-.comp {
+.compSection {
   position: relative;
   margin-top: 100px;
 
-  .header {
-    .title,
-    .subtitle {
-      display: flex;
-      flex-direction: column;
-      margin: 20px auto;
-      font-weight: 800;
-      text-align: center;
-    }
+  .title,
+  .description {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    font-weight: 800;
+    text-align: center;
+  }
 
-    .title {
-      font-size: 2rem;
-    }
+  .title {
+    font-size: 2rem;
+  }
 
-    .subtitle {
-      font-weight: 400;
-    }
+  .description {
+    font-weight: 400;
   }
 
   .compList {
@@ -53,7 +51,7 @@
     }
   }
 
-  .background {
+  .overlay {
     position: absolute;
     top: 270px;
     width: 100%;

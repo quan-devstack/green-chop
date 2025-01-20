@@ -1,5 +1,6 @@
 .newsPage {
-  .pageTitle {
+  // name-section
+  .nameSection {
     padding: 30px;
     background-color: var(--green-10);
 
@@ -9,24 +10,25 @@
     }
   }
 
-  .featuredArticle {
+  // featured-section
+  .featuredSection {
     margin: 50px 0;
 
-    .article {
+    .featuredArticle {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       gap: 10px;
       margin: 30px 0;
       padding: 0 100px;
 
-      .image {
+      .featuredThumbnail {
         grid-column: span 6;
         width: 430px;
         height: 538px;
         object-fit: fill;
       }
 
-      .content {
+      .featuredContent {
         grid-column: span 6;
         margin-top: 30px;
         width: 400px;
@@ -37,20 +39,21 @@
       }
 
       &:nth-of-type(2) {
-        .image {
+        .featuredThumbnail {
           order: 2;
           position: relative;
           top: -100px;
         }
 
-        .content {
+        .featuredContent {
           order: 1;
         }
       }
     }
   }
 
-  .popularArticle {
+  // popular-section
+  .popularSection {
     margin: 50px 0;
 
     .title {
@@ -59,7 +62,7 @@
       text-align: center;
     }
 
-    .newsList {
+    .popularContent {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       gap: 10px;

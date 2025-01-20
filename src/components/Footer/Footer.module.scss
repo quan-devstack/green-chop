@@ -4,7 +4,7 @@
   height: 400px;
   background-color: var(--green-10);
 
-  .containerInner {
+  .layout {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;

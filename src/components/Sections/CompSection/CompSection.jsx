@@ -6,20 +6,18 @@ import compon03 from "/images/struc-page/comp-03.png";
 const CompSection = () => {
   return (
     <>
-      <section className={style.comp}>
-        <div className={style.header}>
-          <h2 className={style.title}>
-            <span>GreenChop bảo vệ</span>
-            <span>người dùng như thế nào ?</span>
-          </h2>
-          <p className={style.subtitle}>
-            <span>Môi đôi đũa GreenChop gồm 2 phần thân đũa và đầu đũa</span>
-            <span>
-              Người dùng có thể dễ dàng tách rời hoặc gắn liền 2 phần này với
-              nhau
-            </span>
-          </p>
-        </div>
+      <section className={style.compSection}>
+        <h2 className={style.title}>
+          <span>GreenChop bảo vệ</span>
+          <span>người dùng như thế nào ?</span>
+        </h2>
+
+        <p className={style.description}>
+          <span>Môi đôi đũa GreenChop gồm 2 phần thân đũa và đầu đũa</span>
+          <span>
+            Người dùng có thể dễ dàng tách rời hoặc gắn liền 2 phần này với nhau
+          </span>
+        </p>
 
         <div className={style.compList}>
           {/* component-card */}
@@ -71,8 +69,8 @@ const CompSection = () => {
           </div>
         </div>
 
-        {/* background */}
-        <div className={style.background}></div>
+        {/* overlay */}
+        <div className={style.overlay}></div>
       </section>
     </>
   );

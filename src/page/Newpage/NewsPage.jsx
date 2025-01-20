@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button/Button";
 import NewCard from "../../components/Sections/NewsSection/NewCard";
-import { news } from "../../components/Sections/NewsSection/new-data.json";
+import { news } from "../../data/news.json";
 import style from "./NewsPage.module.scss";
 import nextIc from "/icons/next-ic.svg";
 
@@ -19,21 +19,24 @@ const NewsPage = () => {
     <>
       <Header />
       <main className={style.newsPage}>
-        <section className={style.pageTitle}>
+        {/* name-section */}
+        <section className={style.nameSection}>
           <div className="container">
             <h1 className={style.title}>Tin tức</h1>
           </div>
         </section>
 
-        <section className={style.featuredArticle}>
+        {/* featured-section */}
+        <section className={style.featuredSection}>
           <div className="container">
-            <article className={style.article}>
+            <article className={style.featuredArticle}>
               <img
                 src={featuredArticles[0].thumnail}
                 alt="thumbnail"
-                className={style.image}
+                className={style.featuredThumbnail}
               />
-              <div className={style.content}>
+
+              <div className={style.featuredContent}>
                 <span className={style.highlight}>Tin nổi bật</span>
                 <h2>{featuredArticles[0].title}</h2>
                 <p>{featuredArticles[0].desc}</p>
@@ -46,16 +49,17 @@ const NewsPage = () => {
               </div>
             </article>
 
-            <article className={style.article}>
+            <article className={style.featuredArticle}>
               <img
                 src={featuredArticles[1].thumnail}
                 alt="thumbnail"
-                className={style.image}
+                className={style.featuredThumbnail}
               />
-              <div className={style.content}>
+              <div className={style.featuredContent}>
                 <span className={style.highlight}>Tin nổi bật</span>
                 <h2>{featuredArticles[1].title}</h2>
                 <p>{featuredArticles[1].desc}</p>
+
                 <Button
                   text={"Xem thêm"}
                   className={"next-btn"}
@@ -67,10 +71,11 @@ const NewsPage = () => {
           </div>
         </section>
 
-        <section className={style.popularArticle}>
+        {/* popular-section */}
+        <section className={style.popularSection}>
           <div className="container">
             <h2 className={style.title}>Bài viết phổ biến</h2>
-            <div className={style.newsList}>
+            <div className={style.popularContent}>
               {filteredNews.map((item) => (
                 <NewCard
                   key={item.id}
