@@ -4,9 +4,9 @@ import AboutPage from "../page/Aboutpage/AboutPage";
 import ProductPage from "../page/ProductPage/ProductPage";
 import ProductDetail from "../page/ProductPage/ProductDetail";
 import ProductCart from "../page/ProductPage/ProductCart";
-import NewsPage from "../page/Newpage/NewsPage";
-import NewsDetail from "../page/Newpage/NewsDetails";
-import Contact from "../page/ContactPage/Contact";
+import NewsPage from "../page/NewsPage/NewsPage";
+import NewsDetail from "../page/NewsPage/NewsDetails";
+import ContactPage from "../page/ContactPage/ContactPage";
 
 const MainRoute = () => (
   <Routes>
@@ -16,8 +16,8 @@ const MainRoute = () => (
     <Route path="/product/:productId?" element={<ProductDetail />} />
     <Route path="/product/cart" element={<ProductCart />} />
     <Route path="/news" element={<NewsPage />} />
-    <Route path="/news/:newsId?" element={<NewsDetail />} />
-    <Route path="/contact" element={<Contact />} />
+    <Route path="/news/:newsTitle?" element={<NewsDetail />} />
+    <Route path="/contact" element={<ContactPage />} />
   </Routes>
 );
 

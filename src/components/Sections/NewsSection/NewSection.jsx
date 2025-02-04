@@ -1,9 +1,9 @@
-import { useNavigate } from "react-router-dom";
-import NewCard from "./NewCard";
+import { useNavigate, NavLink } from "react-router-dom";
 import Button from "../../Button/Button";
 import { news } from "../../../data/news.json";
 import style from "./NewSection.module.scss";
 import nextIc from "/icons/next-ic.svg";
+import calenderIc from "/icons/calendar-ic.svg";
 
 const NewSection = ({ limit }) => {
   const nav = useNavigate();
@@ -12,8 +12,10 @@ const NewSection = ({ limit }) => {
   return (
     <section className={style.newsSection}>
       <div className={"container"}>
+        {/* section-title */}
         <h2 className={style.title}>Tin tức</h2>
 
+        {/* section-desc */}
         <p className={style.description}>
           <span>
             L nulla facilisis at vero eros et accumsan et iusto odio dignissim
@@ -25,22 +27,43 @@ const NewSection = ({ limit }) => {
           </span>
         </p>
 
-        <div className={style.newsList}>
+        {/* news-list */}
+        <div className={style.layout}>
           {displayCard.map((item) => (
-            <NewCard
-              key={item.id}
-              id={item.id}
-              thumnail={item.thumnail}
-              caption={item.thumnail_caption}
-              createdAt={item.createdAt}
-              title={item.title}
-              desc={item.desc}
-              grid={{ gridColumn: "span 4" }}
-            />
+            // news-card
+            <article className={style.newsCard} key={item.id}>
+              <NavLink to={`/news/${item.query}`}>
+                <figure className={style.cardImage}>
+                  <img
+                    className={style.image}
+                    src={item.thumnail}
+                    alt="new-img"
+                  />
+                  <figcaption className={style.caption}>
+                    <span className={style.captionText}>
+                      {item.thumnail_caption}
+                    </span>
+                    <span className={style.captionDate}>
+                      <img
+                        src={calenderIc}
+                        alt="calendar-ic"
+                        width="15"
+                        height="15"
+                      />
+                      {item.createdAt}
+                    </span>
+                  </figcaption>
+                </figure>
+                <div className={style.cardContent}>
+                  <h2 className={style.cardTitle}>{item.title}</h2>
+                  <p className={style.cardDesc}>{item.desc}</p>
+                </div>
+              </NavLink>
+            </article>
           ))}
         </div>
 
-        <div className={style.button}>
+        <div className={style.btnAction}>
           <Button
             text={"Xem thêm"}
             className={"next-btn"}

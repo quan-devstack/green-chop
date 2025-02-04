@@ -12,6 +12,12 @@
 
   // detail-section
   .detailSection {
+    margin-top: 100px;
+
+    .title {
+      text-align: center;
+    }
+
     .article {
       display: flex;
       justify-content: space-between;
@@ -32,7 +38,6 @@
       }
 
       .articleDesc {
-        margin: 20px auto;
         width: 500px;
       }
 
@@ -132,6 +137,8 @@
       }
 
       .goalContent {
+        margin-top: -70px;
+
         .title {
           margin-bottom: 20px;
         }

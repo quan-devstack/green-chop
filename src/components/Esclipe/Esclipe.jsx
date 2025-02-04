@@ -1,7 +1,7 @@
 import "./Esclipe.scss";
 
-const Esclipe = ({ className, background }) => {
-  return <div className={`esclipe ${background} ${className}`}></div>;
+const Esclipe = ({ className }) => {
+  return <div className={`esclipe ${className}`}></div>;
 };
 
 export default Esclipe;

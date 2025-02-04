@@ -88,12 +88,16 @@ const Footer = () => {
       <hr className={style.footerDevider} />
 
       <div className={style.footerRow}>
-        <img src={certificate} alt="certificate" />
-        <div className={style.footerSocial}>
-          <FaYoutube size={40} />
-          <FaFacebook size={40} />
-          <FaTwitter size={40} />
-          <FaInstagramSquare size={40} />
+        <div className="container">
+          <div className={style.layout}>
+            <img src={certificate} alt="certificate" />
+            <div className={style.footerSocial}>
+              <FaYoutube size={40} />
+              <FaFacebook size={40} />
+              <FaTwitter size={40} />
+              <FaInstagramSquare size={40} />
+            </div>
+          </div>
         </div>
       </div>
     </footer>

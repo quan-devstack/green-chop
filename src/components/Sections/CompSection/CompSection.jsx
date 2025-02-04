@@ -19,7 +19,7 @@ const CompSection = () => {
           </span>
         </p>
 
-        <div className={style.compList}>
+        <div className={style.layout}>
           {/* component-card */}
           <div className={style.compCard}>
             <img

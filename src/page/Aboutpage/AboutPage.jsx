@@ -30,6 +30,8 @@ const AboutPage = () => {
         {/* details-section */}
         <section className={style.detailSection}>
           <div className={"container"}>
+            <h2 className={style.title}>Về GreenChop</h2>
+
             {/* article */}
             <article className={style.article}>
               <p className={style.articleDesc}>
@@ -68,7 +70,7 @@ const AboutPage = () => {
 
             {/* article */}
             <article className={style.article}>
-              <p className={style.articleContent}>
+              <p className={style.articleDesc}>
                 Không chỉ là các chuỗi nhà hàng, khách sạn,..., nhiều người tiêu
                 dùng cũng đã tin tưởng và chọn lựa GreenChop như một người bạn
                 đồng hành không thể thiếu cùng gia đình của mình.
@@ -122,11 +124,11 @@ const AboutPage = () => {
                 />
 
                 <div className={style.esclipe}>
-                  <Esclipe className={"big-size"} background={"green-20"} />
+                  <Esclipe className={"big-size green-20"} />
                 </div>
 
                 <div className={style.esclipe}>
-                  <Esclipe className={"medium-size"} background={"orange-20"} />
+                  <Esclipe className={"medium-size orange-20"} />
                 </div>
               </div>
 

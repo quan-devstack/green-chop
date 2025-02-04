@@ -16,12 +16,12 @@ const ProductDetail = () => {
   const location = useLocation();
   const { productId } = useParams();
   const detailElementRef = useRef(null);
-
-  const { title_a, title_b, price, quantity, thumbnail } = location.state || {};
-
   const [init, setInit] = useState(1);
   const [changeContent, setChangeContent] = useState("desc");
   const [openPopUp, setOpenPopUp] = useState(false);
+
+  const productData = location.state || {};
+  console.log(productData);
 
   useEffect(() => {
     if (detailElementRef.current) {
@@ -51,26 +51,26 @@ const ProductDetail = () => {
               <div className={style.productImage}>
                 <div className={style.mainImage}>
                   <img
-                    src={thumbnail}
+                    src={productData?.thumbnail}
                     alt="thumbnail"
                     className={style.image}
                   />
                 </div>
                 <div className={style.smallImage}>
                   <img
-                    src={thumbnail}
+                    src={productData?.thumbnail}
                     alt="thumbnail"
                     className={style.image}
                   />
 
                   <img
-                    src={thumbnail}
+                    src={productData?.thumbnail}
                     alt="thumbnail"
                     className={style.image}
                   />
 
                   <img
-                    src={thumbnail}
+                    src={productData?.thumbnail}
                     alt="thumbnail"
                     className={style.image}
                   />
@@ -79,15 +79,15 @@ const ProductDetail = () => {
 
               <div className={style.productInfo}>
                 <h2 className={style.title}>
-                  {title_a} - {title_b}
+                  {productData?.title_a} - {productData?.title_b}
                 </h2>
                 <hr className={style.divider} />
                 <div className={style.price}>
                   <span>Giá</span>
-                  <span className={style.highlight}>{price}</span>
+                  <span className={style.highlight}>{productData.price}</span>
                   <span>vnđ</span>
                 </div>
-                <span className={style.quantity}>{quantity}</span>
+                <span className={style.quantity}>{productData.quantity}</span>
                 <p className={style.desc}>
                   exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
                   ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer

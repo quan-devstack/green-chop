@@ -20,9 +20,9 @@ const BannerSection = () => {
 
           {/* banner-thumbnail */}
           <div className={style.bannerThumbnail}>
-            <img src={banner} alt="main-banner" className={style.image} />
-            <div className={style.overlay}>
-              <span className={style.overlayTxt}>Green Chop</span>
+            <img src={banner} alt="main-banner" className={style.thumbnail} />
+            <div className={style.thumbnailOverlay}>
+              <span className={style.overlayText}>Green Chop</span>
             </div>
           </div>
         </div>

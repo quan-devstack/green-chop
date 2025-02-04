@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button/Button";
-import NewCard from "../../components/Sections/NewsSection/NewCard";
 import { news } from "../../data/news.json";
 import style from "./NewsPage.module.scss";
 import nextIc from "/icons/next-ic.svg";
@@ -44,7 +43,14 @@ const NewsPage = () => {
                   text={"Xem thêm"}
                   className={"next-btn"}
                   icon={nextIc}
-                  onClick={() => nav(`/news/${featuredArticles[0].id}`)}
+                  onClick={() =>
+                    nav(`/news/${featuredArticles[0].query}`, {
+                      state: {
+                        article: featuredArticles[0],
+                        filterArticle: filteredNews,
+                      },
+                    })
+                  }
                 />
               </div>
             </article>
@@ -64,7 +70,14 @@ const NewsPage = () => {
                   text={"Xem thêm"}
                   className={"next-btn"}
                   icon={nextIc}
-                  onClick={() => nav(`/news/${featuredArticles[1].id}`)}
+                  onClick={() =>
+                    nav(`/news/${featuredArticles[1].id}`, {
+                      state: {
+                        article: featuredArticles[1],
+                        filterArticle: filteredNews,
+                      },
+                    })
+                  }
                 />
               </div>
             </article>
@@ -93,6 +106,7 @@ const NewsPage = () => {
         </section>
       </main>
 
+      {/* footer-section */}
       <Footer />
     </>
   );

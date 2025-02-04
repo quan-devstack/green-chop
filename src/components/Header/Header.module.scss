@@ -7,12 +7,12 @@
     justify-content: space-between;
 
     .logo {
-      display: block;
       width: 125px;
       height: 85px;
     }
 
     .navBar {
+      grid-column: span 8;
       display: flex;
       align-items: center;
 
@@ -31,7 +31,6 @@
       }
 
       .navIcon {
-        display: block;
         margin: 0 10px;
         padding: 10px;
         border-radius: 5px;

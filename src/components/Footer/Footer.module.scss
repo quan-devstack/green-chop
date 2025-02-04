@@ -43,11 +43,13 @@
   }
 
   .footerRow {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1200px;
+    .layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
 
     .footerSocial svg {
       margin: 0 5px;

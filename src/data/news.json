@@ -2,6 +2,7 @@
   "news": [
     {
       "id": "1",
+      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-01.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
@@ -11,6 +12,7 @@
 
     {
       "id": "2",
+      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-02.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
@@ -20,6 +22,7 @@
 
     {
       "id": "3",
+      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-03.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
@@ -29,6 +32,7 @@
 
     {
       "id": "4",
+      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-01.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
@@ -38,6 +42,7 @@
 
     {
       "id": "5",
+      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-02.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
@@ -47,6 +52,7 @@
 
     {
       "id": "6",
+      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-03.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
@@ -56,6 +62,7 @@
 
     {
       "id": "7",
+      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-04.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
@@ -65,6 +72,7 @@
 
     {
       "id": "8",
+      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-05.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
@@ -74,6 +82,7 @@
 
     {
       "id": "9",
+      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-01.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
@@ -83,6 +92,7 @@
 
     {
       "id": "10",
+      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-02.png",
       "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",

@@ -3,13 +3,12 @@
   overflow: hidden;
 
   .layout {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 10px;
+    display: flex;
+    justify-content: space-between;
 
     .bannerContent {
-      grid-column: span 6;
       margin-top: 150px;
+      width: 600px;
 
       .slogan {
         font-size: 2rem;
@@ -31,15 +30,14 @@
     }
 
     .bannerThumbnail {
-      grid-column: span 6;
       position: relative;
 
-      .image {
+      .thumbnail {
         position: relative;
         z-index: 2;
       }
 
-      .overlay {
+      .thumbnailOverlay {
         position: absolute;
         top: 5px;
         left: 200px;
@@ -49,7 +47,7 @@
         height: 100%;
         z-index: 1;
 
-        .overlayTxt {
+        .overlayText {
           display: block;
           position: relative;
           top: 200px;

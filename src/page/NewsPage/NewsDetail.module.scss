@@ -1,0 +1,87 @@
+.linkSection {
+  padding: 30px;
+  text-align: center;
+  background-color: var(--green-20);
+
+  .linkRef:nth-of-type(2) {
+    color: var(--green-80);
+  }
+}
+
+.contentSection {
+  margin-top: 30px;
+  margin-bottom: 200px;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+
+    .article {
+      grid-column: span 8;
+
+      .articleTitle {
+        width: 550px;
+        font-size: 2.3rem;
+      }
+
+      .articleThumbnail {
+        margin-top: 15px;
+
+        .thumbnail {
+          width: 100%;
+          height: 500px;
+        }
+
+        .thumbnailCaption {
+          display: flex;
+          gap: 10px;
+
+          .highlight {
+            font-weight: 600;
+            color: var(--green-80);
+          }
+
+          .createdAt {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+        }
+      }
+
+      .articleDesc {
+        .paragraph {
+          margin: 20px 0;
+        }
+      }
+    }
+
+    .sideBar {
+      grid-column: span 4;
+      margin-top: 50px;
+      margin-left: 50px;
+
+      .sideBarTitle {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      .sideBarContent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+
+        .thumbnail {
+          width: 100%;
+          height: 245px;
+        }
+
+        .title {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

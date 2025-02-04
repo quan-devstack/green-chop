@@ -2,6 +2,7 @@
   "products": [
     {
       "id": "1",
+      "query": "combo-quan-an",
       "title_a": "Combo",
       "title_b": "quán ăn",
       "quantity": "1 thùng 1000 đôi",
@@ -10,8 +11,10 @@
       "esclipe_bg": "orange-30",
       "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
     },
+
     {
       "id": "2",
+      "query": "combo-quan-an-nha-hang",
       "title_a": "Combo",
       "title_b": "quán ăn - nhà hàng",
       "quantity": "1 thùng 2000 đôi",
@@ -20,6 +23,7 @@
       "esclipe_bg": "green-30",
       "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
     },
+
     {
       "id": "3",
       "title_a": "Combo  quán ăn",
@@ -30,6 +34,7 @@
       "esclipe_bg": "orange-30",
       "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
     },
+
     {
       "id": "4",
       "title_a": "Combo",
@@ -40,6 +45,7 @@
       "esclipe_bg": "orange-30",
       "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
     },
+
     {
       "id": "5",
       "title_a": "Combo",
@@ -50,6 +56,7 @@
       "esclipe_bg": "green-30",
       "description": "exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh"
     },
+
     {
       "id": "6",
       "title_a": "Combo",
