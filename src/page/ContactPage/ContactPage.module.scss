@@ -1,0 +1,42 @@
+.mapSection {
+  margin-top: 5px;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+.contactSection {
+  margin-top: 80px;
+
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+
+    .contactContent {
+      .contactIcons {
+        margin-top: 30px;
+
+        .contactItem {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin: 10px 0;
+        }
+
+        .contactItem:nth-of-type(1) span {
+          font-weight: 600;
+        }
+
+        .contactItem:nth-of-type(2) span {
+          font-weight: 600;
+        }
+
+        .contactItem:nth-of-type(5) span {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

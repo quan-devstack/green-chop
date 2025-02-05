@@ -29,8 +29,10 @@
         margin-top: 15px;
 
         .thumbnail {
-          width: 100%;
+          object-fit: cover;
+          width: 750px;
           height: 500px;
+          border-radius: 6px;
         }
 
         .thumbnailCaption {

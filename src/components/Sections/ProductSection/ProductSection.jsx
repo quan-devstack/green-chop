@@ -4,28 +4,8 @@ import Button from "../../Button/Button";
 import { products } from "../../../data/products.json";
 import style from "./ProductSection.module.scss";
 
-const ProductSection = ({ limit }) => {
+const ProductSection = () => {
   const nav = useNavigate();
-  const displayCard = limit ? products.slice(0, limit) : products;
-
-  const navToDetailPage = (
-    query,
-    title_a,
-    title_b,
-    quantity,
-    price,
-    thumbnail
-  ) => {
-    nav(`/product/${query}`, {
-      state: {
-        title_a,
-        title_b,
-        quantity,
-        price,
-        thumbnail,
-      },
-    });
-  };
 
   return (
     <>
@@ -36,9 +16,9 @@ const ProductSection = ({ limit }) => {
 
           {/* product-list */}
           <div className={style.layout}>
-            {displayCard.map((product) => (
+            {products.map((product) => (
               // product-card
-              <div className={style.productCard} key={product.id}>
+              <div className={style.card} key={product.id}>
                 <div className={style.cardImage}>
                   <img
                     src={product.thumbnail}
@@ -66,14 +46,15 @@ const ProductSection = ({ limit }) => {
                   text={"Xem chi tiết"}
                   className={"detail-btn"}
                   onClick={() =>
-                    navToDetailPage(
-                      product.query,
-                      product.title_a,
-                      product.title_b,
-                      product.quantity,
-                      product.price,
-                      product.thumbnail
-                    )
+                    nav(`/product/${product.query}`, {
+                      state: {
+                        title_a: product.title_a,
+                        title_b: product.title_b,
+                        thumbnail: product.thumbnail,
+                        quantity: product.quantity,
+                        price: product.price,
+                      },
+                    })
                   }
                 />
               </div>

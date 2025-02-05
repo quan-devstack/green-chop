@@ -4,7 +4,7 @@
       "id": "1",
       "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-01.png",
-      "thumnail_caption": "Lorem ipsum",
+      "caption": "Tin phổ biến",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
@@ -14,7 +14,7 @@
       "id": "2",
       "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-02.png",
-      "thumnail_caption": "Lorem ipsum",
+      "caption": "Tin phổ biến",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
@@ -24,7 +24,7 @@
       "id": "3",
       "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-03.png",
-      "thumnail_caption": "Lorem ipsum",
+      "caption": "Tin phổ biến",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
@@ -34,7 +34,7 @@
       "id": "4",
       "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-01.png",
-      "thumnail_caption": "Lorem ipsum",
+      "caption": "Tin phổ biến",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
@@ -44,7 +44,7 @@
       "id": "5",
       "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
       "thumnail": "/images/news-page/thumbnail-02.png",
-      "thumnail_caption": "Lorem ipsum",
+      "caption": "Tin phổ biến",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
@@ -53,8 +53,8 @@
     {
       "id": "6",
       "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
+      "caption": "Tin phổ biến",
       "thumnail": "/images/news-page/thumbnail-03.png",
-      "thumnail_caption": "Lorem ipsum",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
@@ -63,8 +63,8 @@
     {
       "id": "7",
       "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
-      "thumnail": "/images/news-page/thumbnail-04.png",
-      "thumnail_caption": "Lorem ipsum",
+      "thumnail": "/images/news-page/thumbnail-01.png",
+      "caption": "Tin phổ biến",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
@@ -73,8 +73,8 @@
     {
       "id": "8",
       "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
-      "thumnail": "/images/news-page/thumbnail-05.png",
-      "thumnail_caption": "Lorem ipsum",
+      "thumnail": "/images/news-page/thumbnail-02.png",
+      "caption": "Tin phổ biến",
       "createdAt": "28-10-2021",
       "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
@@ -82,21 +82,21 @@
 
     {
       "id": "9",
-      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
-      "thumnail": "/images/news-page/thumbnail-01.png",
-      "thumnail_caption": "Lorem ipsum",
+      "query": "exerci-tation-ullamcer-suscipit-m-zril-delenit-augue",
+      "thumnail": "/images/news-page/thumbnail-04.png",
+      "caption": "Tin nổi bật",
       "createdAt": "28-10-2021",
-      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "title": "Exerci tation ullamcer suscipit m zril delenit augue",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
     },
 
     {
       "id": "10",
-      "query": "lorem-ipsum-dolor-sit-amet-cons-in-ectetuer-adipiscing-elit",
-      "thumnail": "/images/news-page/thumbnail-02.png",
-      "thumnail_caption": "Lorem ipsum",
+      "query": "exerci-tation-ullamcer-suscipit-m-zril-delenit-augue",
+      "thumnail": "/images/news-page/thumbnail-05.png",
+      "caption": "Tin nổi bật",
       "createdAt": "28-10-2021",
-      "title": "Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit",
+      "title": "Exerci tation ullamcer suscipit m zril delenit augue",
       "desc": "Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim..."
     }
   ]

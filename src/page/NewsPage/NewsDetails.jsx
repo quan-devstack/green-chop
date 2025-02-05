@@ -3,15 +3,19 @@ import Header from "../../components/Header/Header";
 import style from "./NewsDetail.module.scss";
 import calenderIc from "/icons/calendar-ic.svg";
 import Footer from "../../components/Footer/Footer";
+import { news } from "../../data/news.json";
 
 const NewsDetails = () => {
   const params = useParams();
   const location = useLocation();
-
   const newsTitle = params.newsTitle;
-  const { article, filterArticle } = location.state || {};
-  console.log(article);
-  console.log(filterArticle);
+  const { article } = location.state || {};
+
+  const popularArticles = news.filter(
+    (article) => article.caption === "Tin phổ biến"
+  );
+
+  console.log(popularArticles);
 
   return (
     <>
@@ -27,7 +31,7 @@ const NewsDetails = () => {
               Tin Tức
             </a>
             <a href={`/news/${newsTitle}`} className={style.linkRef}>
-              / Bài Viết: {article.id}
+              / Bài Viết
             </a>
           </div>
         </section>
@@ -46,7 +50,7 @@ const NewsDetails = () => {
                     className={style.thumbnail}
                   />
                   <figcaption className={style.thumbnailCaption}>
-                    <span className={style.highlight}>Tin Nổi Bật</span>
+                    <span className={style.highlight}>{article.caption}</span>
                     <div className={style.createdAt}>
                       <img src={calenderIc} alt="icon" />
                       {article.createdAt}
@@ -146,10 +150,10 @@ const NewsDetails = () => {
                 </div>
               </article>
 
-              <nav className={style.sideBar}>
+              <aside className={style.sideBar}>
                 <span className={style.sideBarTitle}>Bài viết phổ biến</span>
                 <div className={style.sideBarContent}>
-                  {filterArticle.slice(0, 5).map((item) => (
+                  {popularArticles.slice(0, 5).map((item) => (
                     <div key={item.id}>
                       <img
                         src={item.thumnail}
@@ -160,7 +164,7 @@ const NewsDetails = () => {
                     </div>
                   ))}
                 </div>
-              </nav>
+              </aside>
             </div>
           </div>
         </section>

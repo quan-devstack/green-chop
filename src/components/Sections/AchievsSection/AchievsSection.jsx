@@ -20,10 +20,10 @@ const AchievsSection = () => {
         </p>
 
         {/* achev-list */}
-        <div className={style.achievContent}>
+        <div className={style.content}>
           <div className={style.layout}>
             {achivement.map((achev) => (
-              <div className={style.achevCard} key={achev.id}>
+              <div className={style.card} key={achev.id}>
                 <img className={style.cardIcon} src={badgeIc} alt="badge-ic" />
                 <span className={style.cardNumber}>{achev.number}</span>
                 <p className={style.cardDesc}>{achev.title}</p>

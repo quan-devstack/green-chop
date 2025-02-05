@@ -31,34 +31,40 @@ const NewSection = ({ limit }) => {
         <div className={style.layout}>
           {displayCard.map((item) => (
             // news-card
-            <article className={style.newsCard} key={item.id}>
-              <NavLink to={`/news/${item.query}`}>
-                <figure className={style.cardImage}>
-                  <img
-                    className={style.image}
-                    src={item.thumnail}
-                    alt="new-img"
-                  />
-                  <figcaption className={style.caption}>
-                    <span className={style.captionText}>
-                      {item.thumnail_caption}
-                    </span>
-                    <span className={style.captionDate}>
-                      <img
-                        src={calenderIc}
-                        alt="calendar-ic"
-                        width="15"
-                        height="15"
-                      />
-                      {item.createdAt}
-                    </span>
-                  </figcaption>
-                </figure>
-                <div className={style.cardContent}>
-                  <h2 className={style.cardTitle}>{item.title}</h2>
-                  <p className={style.cardDesc}>{item.desc}</p>
-                </div>
-              </NavLink>
+            <article
+              className={style.newsCard}
+              key={item.id}
+              onClick={() =>
+                nav(`/news/${item.query}`, {
+                  state: {
+                    article: item,
+                  },
+                })
+              }
+            >
+              <figure className={style.cardImage}>
+                <img
+                  className={style.image}
+                  src={item.thumnail}
+                  alt="new-img"
+                />
+                <figcaption className={style.caption}>
+                  <span className={style.captionText}>{item.caption}</span>
+                  <span className={style.captionDate}>
+                    <img
+                      src={calenderIc}
+                      alt="calendar-ic"
+                      width="15"
+                      height="15"
+                    />
+                    {item.createdAt}
+                  </span>
+                </figcaption>
+              </figure>
+              <div className={style.cardContent}>
+                <h2 className={style.cardTitle}>{item.title}</h2>
+                <p className={style.cardDesc}>{item.desc}</p>
+              </div>
             </article>
           ))}
         </div>

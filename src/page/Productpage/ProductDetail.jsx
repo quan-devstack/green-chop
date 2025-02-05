@@ -21,7 +21,6 @@ const ProductDetail = () => {
   const [openPopUp, setOpenPopUp] = useState(false);
 
   const productData = location.state || {};
-  console.log(productData);
 
   useEffect(() => {
     if (detailElementRef.current) {
@@ -38,11 +37,7 @@ const ProductDetail = () => {
       <main className={style.productDetail}>
         <section className={style.pageHeader}>
           <NavLink to={"/product"}>Sản phẩm /</NavLink>
-          {productId && (
-            <span className={style.pageTitle}>
-              Thông tin sản phẩm: {productId}
-            </span>
-          )}
+          <span className={style.pageTitle}>Thông tin sản phẩm</span>
         </section>
 
         <section className={style.productOverview}>

@@ -1,17 +1,21 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button/Button";
 import { news } from "../../data/news.json";
 import style from "./NewsPage.module.scss";
 import nextIc from "/icons/next-ic.svg";
+import calenderIc from "/icons/calendar-ic.svg";
 
 const NewsPage = () => {
   const nav = useNavigate();
 
-  const featuredArticles = news.slice(0, 2);
-  const filteredNews = news.filter(
-    (article) => !featuredArticles.includes(article)
+  const headlineArticles = news.filter(
+    (article) => article.caption === "Tin nổi bật"
+  );
+
+  const popularArticles = news.filter(
+    (article) => article.caption === "Tin phổ biến"
   );
 
   return (
@@ -28,59 +32,33 @@ const NewsPage = () => {
         {/* featured-section */}
         <section className={style.featuredSection}>
           <div className="container">
-            <article className={style.featuredArticle}>
-              <img
-                src={featuredArticles[0].thumnail}
-                alt="thumbnail"
-                className={style.featuredThumbnail}
-              />
-
-              <div className={style.featuredContent}>
-                <span className={style.highlight}>Tin nổi bật</span>
-                <h2>{featuredArticles[0].title}</h2>
-                <p>{featuredArticles[0].desc}</p>
-                <Button
-                  text={"Xem thêm"}
-                  className={"next-btn"}
-                  icon={nextIc}
-                  onClick={() =>
-                    nav(`/news/${featuredArticles[0].query}`, {
-                      state: {
-                        article: featuredArticles[0],
-                        filterArticle: filteredNews,
-                      },
-                    })
-                  }
+            {headlineArticles.map((item) => (
+              <article className={style.featuredArticle} key={item.id}>
+                <img
+                  src={item.thumnail}
+                  alt="thumbnail"
+                  className={style.featuredThumbnail}
                 />
-              </div>
-            </article>
 
-            <article className={style.featuredArticle}>
-              <img
-                src={featuredArticles[1].thumnail}
-                alt="thumbnail"
-                className={style.featuredThumbnail}
-              />
-              <div className={style.featuredContent}>
-                <span className={style.highlight}>Tin nổi bật</span>
-                <h2>{featuredArticles[1].title}</h2>
-                <p>{featuredArticles[1].desc}</p>
-
-                <Button
-                  text={"Xem thêm"}
-                  className={"next-btn"}
-                  icon={nextIc}
-                  onClick={() =>
-                    nav(`/news/${featuredArticles[1].id}`, {
-                      state: {
-                        article: featuredArticles[1],
-                        filterArticle: filteredNews,
-                      },
-                    })
-                  }
-                />
-              </div>
-            </article>
+                <div className={style.featuredContent}>
+                  <span className={style.highlight}>Tin nổi bật</span>
+                  <h2>{item.title}</h2>
+                  <p>{item.desc}</p>
+                  <Button
+                    text={"Xem thêm"}
+                    className={"next-btn"}
+                    icon={nextIc}
+                    onClick={() =>
+                      nav(`/news/${item.query}`, {
+                        state: {
+                          article: item,
+                        },
+                      })
+                    }
+                  />
+                </div>
+              </article>
+            ))}
           </div>
         </section>
 
@@ -89,17 +67,43 @@ const NewsPage = () => {
           <div className="container">
             <h2 className={style.title}>Bài viết phổ biến</h2>
             <div className={style.popularContent}>
-              {filteredNews.map((item) => (
-                <NewCard
+              {popularArticles.map((item) => (
+                <article
+                  className={style.newsCard}
                   key={item.id}
-                  id={item.id}
-                  thumnail={item.thumnail}
-                  caption={item.thumnail_caption}
-                  createdAt={item.createdAt}
-                  title={item.title}
-                  desc={item.desc}
-                  grid={{ gridColumn: "span 6" }}
-                />
+                  onClick={() =>
+                    nav(`/news/${featuredArticles[1].query}`, {
+                      state: {
+                        article: featuredArticles[1],
+                        filterArticle: filteredNews,
+                      },
+                    })
+                  }
+                >
+                  <figure className={style.cardImage}>
+                    <img
+                      className={style.image}
+                      src={item.thumnail}
+                      alt="new-img"
+                    />
+                    <figcaption className={style.caption}>
+                      <span className={style.captionText}>{item.caption}</span>
+                      <span className={style.captionDate}>
+                        <img
+                          src={calenderIc}
+                          alt="calendar-ic"
+                          width="15"
+                          height="15"
+                        />
+                        {item.createdAt}
+                      </span>
+                    </figcaption>
+                  </figure>
+                  <div className={style.cardContent}>
+                    <h2 className={style.cardTitle}>{item.title}</h2>
+                    <p className={style.cardDesc}>{item.desc}</p>
+                  </div>
+                </article>
               ))}
             </div>
           </div>

@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
 
-    .bannerContent {
+    .content {
       margin-top: 150px;
       width: 600px;
 
@@ -29,15 +29,15 @@
       }
     }
 
-    .bannerThumbnail {
+    .thumbnail {
       position: relative;
 
-      .thumbnail {
+      .image {
         position: relative;
         z-index: 2;
       }
 
-      .thumbnailOverlay {
+      .overlay {
         position: absolute;
         top: 5px;
         left: 200px;
@@ -63,5 +63,17 @@
         }
       }
     }
+  }
+}
+
+.supportSection {
+  margin-top: 100px;
+
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 50px;
   }
 }
